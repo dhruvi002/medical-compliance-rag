@@ -1,6 +1,6 @@
 # Medical Compliance RAG System
 
-A Retrieval-Augmented Generation (RAG) system for answering medical compliance questions, built as a portfolio project demonstrating AI/ML engineering capabilities.
+A Retrieval-Augmented Generation (RAG) system for answering medical compliance questions. 
 
 ## 🎯 Project Overview
 
@@ -13,7 +13,6 @@ This project builds a comprehensive AI assistant for healthcare compliance quest
 
 **Target users:** ~100 healthcare workers  
 **Budget constraint:** $0 (all open-source/free tier)  
-**Timeline:** 6 weeks
 
 ---
 
@@ -132,7 +131,7 @@ Expected output:
 
 ## 📈 Roadmap
 
-### Week 1: Data Prep ✅ COMPLETE
+### Phase 1: Data Prep ✅ COMPLETE
 - [x] Install Ollama and models
 - [x] Collect 88+ government compliance documents
 - [x] Scrape 10 Wikipedia articles
@@ -140,29 +139,29 @@ Expected output:
 - [x] Process all PDFs to text
 - [x] Set up Python environment
 
-### Week 2: RAG System (In Progress)
+### Phase 2: RAG System (In Progress)
 - [ ] Set up ChromaDB vector database
 - [ ] Generate embeddings for all documents
 - [ ] Implement retrieval pipeline with LangChain
 - [ ] Build query interface
 - [ ] Test with synthetic Q&As
 
-### Week 3: Skill Gap Analyzer
+### Phase 3: Skill Gap Analyzer
 - [ ] Create synthetic employee training data
 - [ ] Build NLP analysis for skill gaps
 - [ ] Implement recommendation engine
 
-### Week 4: Data Governance
+### Phase 4: Data Governance
 - [ ] Add compliance tracking
 - [ ] Implement audit trails
 - [ ] Add data lineage documentation
 
-### Week 5: Impact Dashboard
+### Phase 5: Impact Dashboard
 - [ ] Build Streamlit dashboard
 - [ ] Add usage analytics
 - [ ] Create performance metrics
 
-### Week 6: Polish & Deploy
+### Phase 6: Polish & Deploy
 - [ ] Optimize performance
 - [ ] Write documentation
 - [ ] Deploy to Streamlit Cloud
@@ -235,14 +234,14 @@ All data is publicly available:
 
 ## 🔜 Next Steps
 
-**Immediate (Week 2):**
+**Immediate (Phase 2):**
 1. Initialize ChromaDB vector store
 2. Chunk documents (500-1000 tokens)
 3. Generate embeddings using nomic-embed-text
 4. Build LangChain retrieval chain
 5. Create basic Streamlit UI
 
-**See detailed Week 2 plan in `/docs/week2_plan.md`** (coming soon)
+**See detailed Phase 2 plan in `/docs/Phase2_plan.md`** (coming soon)
 
 ---
 
@@ -250,8 +249,8 @@ All data is publicly available:
 
 **Dhruvi Shah**  
 AI/ML Engineer  
-Building this as a portfolio project for interview preparation
-
+Student- University of Massachusetts, Amherst
+Masters in Computer Science
 ---
 
 ## 📄 License
@@ -263,4 +262,4 @@ Code is available for review.
 ---
 
 **Last Updated:** February 6, 2026  
-**Current Phase:** Week 1 Complete ✅ | Week 2 Starting Soon
+**Current Phase:** Phase 1 Complete ✅ | Phase 2 Starting Soon
