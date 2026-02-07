@@ -1,0 +1,103 @@
+{
+  "employee_id": "EMP0001",
+  "role": "Registered Nurse",
+  "overall_score": 0.7,
+  "status": "Learning path generated",
+  "total_modules": 3,
+  "estimated_total_time_minutes": 80,
+  "modules": [
+    {
+      "module_number": 1,
+      "category": "Infection Control",
+      "severity": "critical",
+      "current_proficiency": 0.0,
+      "target_proficiency": 0.8,
+      "improvement_needed": 0.8,
+      "estimated_time_minutes": 30,
+      "questions": [
+        "What are the WHO ‘5 Moments for Hand Hygiene,’ and when do they apply during patient care?",
+        "If I only touched the patient’s bed rail and not the patient, do I still need to clean my hands?",
+        "What is the difference between standard precautions and contact precautions?",
+        "When are droplet precautions required, and what PPE should be used?",
+        "What situations require airborne precautions, and how do they differ from droplet precautions?"
+      ],
+      "learning_content": [
+        {
+          "chunk_number": 1,
+          "source_file": "Infection prevention and control",
+          "preview": "Infection prevention and control (IPC) is the discipline concerned with preventing healthcare-associated infections; a practical rather than academic sub-discipline of epidemiology. In Northern Europe..."
+        },
+        {
+          "chunk_number": 2,
+          "source_file": "2007 Guideline for Isolation Precautions- Preventing Transmission of Infectious Agents in Healthcare Settings.pdf",
+          "preview": "Guideline for Isolation Precautions: Preventing Transmission of Infectious Agents in Healthcare Settings (2007) \nLast update: September 2024 Page 137 of 211  \n subclinical, with manifestations of dise..."
+        },
+        {
+          "chunk_number": 3,
+          "source_file": "2007 Guideline for Isolation Precautions- Preventing Transmission of Infectious Agents in Healthcare Settings.pdf",
+          "preview": "Part II updates  information  on the basic  principles  of hand  hygiene,  barrier  precautions, \nsafe work practices and isolation practices that were included in previous guidelines\n\nHowever, new to..."
+        }
+      ]
+    },
+    {
+      "module_number": 2,
+      "category": "Security / Contingency",
+      "severity": "critical",
+      "current_proficiency": 0.0,
+      "target_proficiency": 0.8,
+      "improvement_needed": 0.8,
+      "estimated_time_minutes": 30,
+      "questions": [
+        "If a power outage disables electronic access logs, how do we maintain HIPAA audit trail compliance?"
+      ],
+      "learning_content": [
+        {
+          "chunk_number": 1,
+          "source_file": "OSHA_pandemic_health.pdf",
+          "preview": "rate potential cases from staff, visitors, and other\npatients. In a pandemic, healthcare facility security\nmay need to be ready to address crowd control and\nphysical protection of the facility and hos..."
+        },
+        {
+          "chunk_number": 2,
+          "source_file": "Workplace Violence- Guidelines for Preventing Workplace Violence for Healthcare and Social Service Workers .pdf",
+          "preview": "Occupational Safety and Health Administration20HospitalResidential TreatmentNon-residential Treatment/ServiceCommunity CareField Workers (Home Healthcare, Social Service)Entry procedures xProvide resp..."
+        },
+        {
+          "chunk_number": 3,
+          "source_file": "2007 Guideline for Isolation Precautions- Preventing Transmission of Infectious Agents in Healthcare Settings.pdf",
+          "preview": "identifying  persons  who may be exposed  or infected;  \n2\n\npreventing  transmission  among  patients,  healthcare  personnel,  and visitors;  \n3\n\nproviding  treatment,  chemoprophylaxis  or vaccine t..."
+        }
+      ]
+    },
+    {
+      "module_number": 3,
+      "category": "Medical Waste",
+      "severity": "moderate",
+      "current_proficiency": 0.5,
+      "target_proficiency": 0.8,
+      "improvement_needed": 0.3,
+      "estimated_time_minutes": 20,
+      "questions": [
+        "Where should I dispose of a used needle after giving an injection?",
+        "What should I do if a sharps container is almost full?",
+        "How do I know whether waste goes into a red biohazard bag or regular trash?"
+      ],
+      "learning_content": [
+        {
+          "chunk_number": 1,
+          "source_file": "Biomedical waste",
+          "preview": "Disposal occurs off-site, at a location that is different from the site of generation. Treatment may occur on-site or off-site. On-site treatment of large quantities of biomedical waste usually requir..."
+        },
+        {
+          "chunk_number": 2,
+          "source_file": "Biomedical waste",
+          "preview": "Biomedical waste is distinct from normal trash or general waste, and differs from other types of hazardous waste, such as chemical, radioactive, universal or industrial waste. Medical facilities gener..."
+        },
+        {
+          "chunk_number": 3,
+          "source_file": "Biomedical waste",
+          "preview": "The reason ORs generate such an abundance of waste is because of a lack of education of surgeons regarding every surgical procedures' contribution to the carbon footprint. When asked in a survey, in a..."
+        }
+      ]
+    }
+  ]
+}

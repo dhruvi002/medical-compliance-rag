@@ -1,0 +1,6828 @@
+[
+  {
+    "employee_id": "EMP0001",
+    "role": "Registered Nurse",
+    "experience_level": "mid",
+    "years_experience": 8.1,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "OSHA": 1.0,
+      "Medical Waste": 0.5,
+      "HIPAA": 0.8,
+      "Documentation & Training": 0.75,
+      "Infection Control": 0.0,
+      "Gray Areas / Governance": 1.0,
+      "Security / Contingency": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.9,
+      "medium": 0.43,
+      "hard": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0002",
+    "role": "Surgery Technician",
+    "experience_level": "junior",
+    "years_experience": 3.5,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Infection Control": 0.6,
+      "Conflicting Priorities": 1.0,
+      "HIPAA": 0.5,
+      "OSHA": 0.5,
+      "Documentation & Training": 0.8,
+      "Medical Waste": 0.75,
+      "Conflicting Regulations": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.33,
+      "easy": 0.89,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71.6,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0003",
+    "role": "Medical Assistant",
+    "experience_level": "senior",
+    "years_experience": 12.5,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "OSHA": 1.0,
+      "Infection Control": 1.0,
+      "Documentation & Training": 0.8,
+      "HIPAA": 0.75,
+      "Medical Waste": 0.75,
+      "Emergency / HIPAA": 1.0,
+      "Gray Areas / Governance": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.83,
+      "easy": 1.0,
+      "hard": 0.5
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 83.0,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0004",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 4.2,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "HIPAA": 0.75,
+      "Documentation & Training": 0.2,
+      "Security / Contingency": 0.0,
+      "OSHA": 0.67,
+      "Medical Waste": 0.75,
+      "HIPAA + OSHA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Infection Control": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.5,
+      "easy": 0.67,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.2,
+        "questions_attempted": 5,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 65.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0005",
+    "role": "Registered Nurse",
+    "experience_level": "mid",
+    "years_experience": 9.3,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 0.75,
+      "State vs Federal": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Documentation & Training": 0.67,
+      "Conflicting Regulations": 0.0,
+      "HIPAA": 0.5,
+      "Emergency / HIPAA": 1.0,
+      "Medical Waste": 1.0,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.9,
+      "easy": 0.71,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 75.0,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0006",
+    "role": "Medical Assistant",
+    "experience_level": "entry",
+    "years_experience": 0.5,
+    "overall_score": 0.6,
+    "total_questions": 20,
+    "correct_answers": 12,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Infection Control": 0.67,
+      "OSHA": 0.71,
+      "HIPAA": 0.0,
+      "Gray Areas / Governance": 0.0,
+      "Medical Waste": 1.0,
+      "Security / Contingency": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.8,
+      "hard": 0.0,
+      "medium": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.6,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0007",
+    "role": "Phlebotomist",
+    "experience_level": "junior",
+    "years_experience": 4.2,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "State vs Federal": 0.0,
+      "Documentation & Training": 0.0,
+      "Infection Control": 0.75,
+      "OSHA": 1.0,
+      "HIPAA": 0.67,
+      "Medical Waste": 0.33,
+      "Complex / Multi-Regulation": 1.0,
+      "Emergency / Infection Control": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.55,
+      "easy": 1.0,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0008",
+    "role": "Home Health Aide",
+    "experience_level": "senior",
+    "years_experience": 19.2,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Medical Waste": 0.8,
+      "OSHA": 1.0,
+      "Infection Control": 0.33,
+      "Documentation & Training": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "HIPAA": 1.0,
+      "Security / Contingency": 0.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.75,
+      "medium": 0.83,
+      "hard": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 76.6,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0009",
+    "role": "Phlebotomist",
+    "experience_level": "mid",
+    "years_experience": 6.2,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Documentation & Training": 0.8,
+      "HIPAA": 1.0,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "Infection Control": 0.75,
+      "State vs Federal": 0.0,
+      "Complex / Multi-Regulation": 1.0,
+      "Conflicting Priorities": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.89,
+      "easy": 1.0,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0010",
+    "role": "Home Health Aide",
+    "experience_level": "junior",
+    "years_experience": 2.3,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Medical Waste": 0.8,
+      "Documentation & Training": 0.0,
+      "HIPAA": 0.5,
+      "Infection Control": 0.67,
+      "OSHA": 0.33,
+      "Complex / Multi-Regulation": 0.0,
+      "Security / Contingency": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Gray Areas / Governance": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.8,
+      "medium": 0.6,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "Documentation & Training",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.3,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0011",
+    "role": "Lab Technician",
+    "experience_level": "mid",
+    "years_experience": 5.2,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "HIPAA": 1.0,
+      "Gray Areas / Governance": 0.0,
+      "Infection Control": 1.0,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "State vs Federal": 0.0,
+      "Conflicting Priorities": 0.0,
+      "Emergency / HIPAA": 1.0,
+      "Security / Contingency": 0.0,
+      "Emergency / Infection Control": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.83,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.2,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0012",
+    "role": "Medical Assistant",
+    "experience_level": "junior",
+    "years_experience": 4.0,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Documentation & Training": 0.5,
+      "Emergency / HIPAA": 1.0,
+      "Emergency / Infection Control": 0.0,
+      "HIPAA": 0.6,
+      "OSHA": 0.0,
+      "Medical Waste": 0.33,
+      "Infection Control": 1.0,
+      "Security / Contingency": 1.0,
+      "Gray Areas / Governance": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.25,
+      "medium": 0.5,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 67.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0013",
+    "role": "Clinic Administrator",
+    "experience_level": "junior",
+    "years_experience": 2.1,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "OSHA": 1.0,
+      "HIPAA": 0.5,
+      "Documentation & Training": 1.0,
+      "Infection Control": 0.5,
+      "Emergency / HIPAA": 1.0,
+      "Medical Waste": 0.5,
+      "HIPAA + OSHA": 1.0,
+      "Security / Contingency": 0.0,
+      "Gray Areas / Governance": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.6,
+      "easy": 0.71,
+      "hard": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.4,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0014",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 3.5,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "OSHA": 1.0,
+      "Infection Control": 1.0,
+      "Medical Waste": 0.71,
+      "Gray Areas / Governance": 1.0,
+      "Documentation & Training": 1.0,
+      "HIPAA": 0.67,
+      "Security / Contingency": 0.0,
+      "Emergency / Infection Control": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.5,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 75.2,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0015",
+    "role": "Emergency Room Nurse",
+    "experience_level": "mid",
+    "years_experience": 9.7,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Medical Waste": 0.75,
+      "Emergency / Infection Control": 0.0,
+      "HIPAA": 0.25,
+      "OSHA": 0.75,
+      "Documentation & Training": 0.33,
+      "Conflicting Priorities": 1.0,
+      "Infection Control": 0.67
+    },
+    "difficulty_scores": {
+      "easy": 0.78,
+      "hard": 0.25,
+      "medium": 0.43
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 67.7,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0016",
+    "role": "Home Health Aide",
+    "experience_level": "senior",
+    "years_experience": 13.4,
+    "overall_score": 0.6,
+    "total_questions": 20,
+    "correct_answers": 12,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Documentation & Training": 0.2,
+      "HIPAA": 0.5,
+      "OSHA": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Emergency / HIPAA": 1.0,
+      "Medical Waste": 1.0,
+      "Conflicting Regulations": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.55,
+      "hard": 0.25
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.2,
+        "questions_attempted": 5,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 68.6,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0017",
+    "role": "Emergency Room Nurse",
+    "experience_level": "mid",
+    "years_experience": 6.2,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Medical Waste": 1.0,
+      "Documentation & Training": 1.0,
+      "Conflicting Regulations": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Emergency / Infection Control": 0.0,
+      "OSHA": 0.33,
+      "Emergency / HIPAA": 0.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.89,
+      "medium": 0.71,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 76.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0018",
+    "role": "Lab Technician",
+    "experience_level": "mid",
+    "years_experience": 8.1,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "OSHA": 0.67,
+      "Medical Waste": 0.67,
+      "Infection Control": 0.67,
+      "HIPAA": 0.67,
+      "Emergency / Infection Control": 0.0,
+      "Conflicting Priorities": 0.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.91,
+      "easy": 0.6,
+      "hard": 0.25
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 69.7,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0019",
+    "role": "Surgery Technician",
+    "experience_level": "junior",
+    "years_experience": 2.2,
+    "overall_score": 0.45,
+    "total_questions": 20,
+    "correct_answers": 9,
+    "category_scores": {
+      "HIPAA": 0.5,
+      "Medical Waste": 0.0,
+      "Documentation & Training": 0.67,
+      "Security / Contingency": 0.0,
+      "OSHA": 0.25,
+      "Conflicting Regulations": 0.0,
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.7,
+      "hard": 0.25,
+      "medium": 0.17
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 70.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0020",
+    "role": "Clinic Administrator",
+    "experience_level": "senior",
+    "years_experience": 16.9,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Emergency / HIPAA": 0.0,
+      "HIPAA": 0.25,
+      "Medical Waste": 0.75,
+      "Documentation & Training": 1.0,
+      "OSHA": 1.0,
+      "Infection Control": 0.8,
+      "Complex / Multi-Regulation": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.6,
+      "easy": 0.89,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0021",
+    "role": "Registered Nurse",
+    "experience_level": "entry",
+    "years_experience": 0.4,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "Documentation & Training": 0.67,
+      "Conflicting Regulations": 0.0,
+      "OSHA": 1.0,
+      "HIPAA": 0.0,
+      "Infection Control": 1.0,
+      "HIPAA + OSHA": 0.0,
+      "Security / Contingency": 0.0,
+      "Medical Waste": 0.33,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.5,
+      "hard": 0.17,
+      "easy": 0.75
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 68.3,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0022",
+    "role": "Phlebotomist",
+    "experience_level": "mid",
+    "years_experience": 7.0,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "Medical Waste": 1.0,
+      "Documentation & Training": 0.6,
+      "Infection Control": 0.5,
+      "HIPAA": 0.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Security / Contingency": 1.0,
+      "Gray Areas / Governance": 0.0,
+      "OSHA": 1.0,
+      "Conflicting Regulations": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.43,
+      "easy": 0.62,
+      "hard": 0.4
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 5,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 64.2,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0023",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 3.7,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Documentation & Training": 0.8,
+      "Infection Control": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "OSHA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "State vs Federal": 1.0,
+      "HIPAA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Emergency / HIPAA": 1.0,
+      "Emergency / Infection Control": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.9,
+      "easy": 1.0,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79.5,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0024",
+    "role": "Registered Nurse",
+    "experience_level": "mid",
+    "years_experience": 6.6,
+    "overall_score": 0.4,
+    "total_questions": 20,
+    "correct_answers": 8,
+    "category_scores": {
+      "Infection Control": 0.0,
+      "HIPAA + OSHA": 0.0,
+      "Medical Waste": 0.67,
+      "HIPAA": 0.67,
+      "Documentation & Training": 0.5,
+      "Conflicting Priorities": 0.0,
+      "Complex / Multi-Regulation": 1.0,
+      "OSHA": 0.5,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.25,
+      "medium": 0.4,
+      "easy": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Infection Control",
+        "score": 0.0,
+        "questions_attempted": 6,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 64.5,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0025",
+    "role": "Medical Assistant",
+    "experience_level": "mid",
+    "years_experience": 5.6,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Documentation & Training": 0.6,
+      "Medical Waste": 0.67,
+      "HIPAA": 0.67,
+      "Complex / Multi-Regulation": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Infection Control": 0.67,
+      "OSHA": 1.0,
+      "Security / Contingency": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "hard": 0.4,
+      "medium": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0026",
+    "role": "Lab Technician",
+    "experience_level": "entry",
+    "years_experience": 0.0,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "Emergency / Infection Control": 1.0,
+      "Documentation & Training": 0.33,
+      "HIPAA": 0.67,
+      "OSHA": 0.0,
+      "Emergency / HIPAA": 0.5,
+      "Security / Contingency": 0.0,
+      "Infection Control": 0.5,
+      "Medical Waste": 0.5,
+      "Gray Areas / Governance": 1.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.5,
+      "medium": 0.46,
+      "easy": 0.6
+    },
+    "gaps": [
+      {
+        "category": "OSHA",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 64.2,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0027",
+    "role": "Registered Nurse",
+    "experience_level": "mid",
+    "years_experience": 8.2,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.25,
+      "Medical Waste": 0.8,
+      "Complex / Multi-Regulation": 0.0,
+      "State vs Federal": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Conflicting Regulations": 0.0,
+      "Documentation & Training": 1.0,
+      "Security / Contingency": 1.0,
+      "HIPAA": 1.0,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.88,
+      "medium": 0.71,
+      "hard": 0.4
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 77.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0028",
+    "role": "Medical Assistant",
+    "experience_level": "entry",
+    "years_experience": 1.7,
+    "overall_score": 0.6,
+    "total_questions": 20,
+    "correct_answers": 12,
+    "category_scores": {
+      "HIPAA": 0.25,
+      "Gray Areas / Governance": 1.0,
+      "Documentation & Training": 0.67,
+      "Medical Waste": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "OSHA": 0.6,
+      "Infection Control": 0.5,
+      "Complex / Multi-Regulation": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.67,
+      "easy": 0.57,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 66.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0029",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 6.8,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.5,
+      "HIPAA": 0.8,
+      "OSHA": 0.33,
+      "Emergency / Infection Control": 0.0,
+      "Documentation & Training": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Conflicting Regulations": 1.0,
+      "State vs Federal": 1.0,
+      "Medical Waste": 1.0,
+      "Security / Contingency": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.83,
+      "hard": 0.5,
+      "medium": 0.7
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 75.1,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0030",
+    "role": "Clinic Administrator",
+    "experience_level": "mid",
+    "years_experience": 6.8,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "OSHA": 0.5,
+      "Infection Control": 0.67,
+      "Emergency / Infection Control": 1.0,
+      "HIPAA": 1.0,
+      "Medical Waste": 1.0,
+      "Documentation & Training": 0.6,
+      "Conflicting Priorities": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.82,
+      "medium": 0.67,
+      "hard": 0.67
+    },
+    "gaps": [
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 82.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0031",
+    "role": "Surgery Technician",
+    "experience_level": "senior",
+    "years_experience": 16.8,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "Conflicting Regulations": 0.0,
+      "HIPAA": 0.33,
+      "OSHA": 1.0,
+      "Infection Control": 1.0,
+      "Medical Waste": 1.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "hard": 0.5,
+      "medium": 0.9
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 75.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0032",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 8.5,
+    "overall_score": 0.8,
+    "total_questions": 20,
+    "correct_answers": 16,
+    "category_scores": {
+      "Complex / Multi-Regulation": 1.0,
+      "Conflicting Regulations": 0.0,
+      "Infection Control": 1.0,
+      "HIPAA": 0.67,
+      "Documentation & Training": 0.5,
+      "Medical Waste": 1.0,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.8,
+      "medium": 0.75,
+      "easy": 0.86
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 78.0,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0033",
+    "role": "Surgery Technician",
+    "experience_level": "entry",
+    "years_experience": 0.7,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Infection Control": 0.33,
+      "HIPAA": 0.6,
+      "Medical Waste": 0.5,
+      "Documentation & Training": 0.67,
+      "OSHA": 1.0,
+      "Security / Contingency": 0.0,
+      "Conflicting Regulations": 0.0,
+      "HIPAA + OSHA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.83,
+      "medium": 0.56,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.5,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0034",
+    "role": "Clinic Administrator",
+    "experience_level": "junior",
+    "years_experience": 2.7,
+    "overall_score": 0.8,
+    "total_questions": 20,
+    "correct_answers": 16,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "Infection Control": 0.8,
+      "Complex / Multi-Regulation": 1.0,
+      "HIPAA": 1.0,
+      "OSHA": 0.67,
+      "Medical Waste": 0.75,
+      "Conflicting Regulations": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.75,
+      "medium": 1.0,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 78.9,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0035",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 8.7,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Documentation & Training": 0.6,
+      "Medical Waste": 1.0,
+      "Conflicting Regulations": 0.0,
+      "Infection Control": 0.25,
+      "OSHA": 0.67
+    },
+    "difficulty_scores": {
+      "easy": 0.78,
+      "medium": 0.56,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 6
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 76.6,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0036",
+    "role": "Clinic Administrator",
+    "experience_level": "senior",
+    "years_experience": 17.5,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Documentation & Training": 0.5,
+      "Emergency / Infection Control": 0.0,
+      "Security / Contingency": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "State vs Federal": 0.0,
+      "Infection Control": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "OSHA": 1.0,
+      "HIPAA": 0.5,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.73,
+      "hard": 0.33,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.0,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0037",
+    "role": "Clinic Administrator",
+    "experience_level": "entry",
+    "years_experience": 1.3,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Medical Waste": 0.5,
+      "OSHA": 1.0,
+      "Documentation & Training": 0.75,
+      "Infection Control": 0.0,
+      "Emergency / Infection Control": 0.0,
+      "State vs Federal": 1.0,
+      "Conflicting Regulations": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.89,
+      "easy": 0.71,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Infection Control",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0038",
+    "role": "Medical Assistant",
+    "experience_level": "mid",
+    "years_experience": 9.2,
+    "overall_score": 0.8,
+    "total_questions": 20,
+    "correct_answers": 16,
+    "category_scores": {
+      "HIPAA": 0.5,
+      "Emergency / HIPAA": 1.0,
+      "Infection Control": 1.0,
+      "Medical Waste": 1.0,
+      "Documentation & Training": 0.33,
+      "OSHA": 0.67,
+      "State vs Federal": 1.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.88,
+      "easy": 0.86,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Documentation & Training",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 6
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0039",
+    "role": "Home Health Aide",
+    "experience_level": "senior",
+    "years_experience": 16.2,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.67,
+      "Medical Waste": 0.67,
+      "HIPAA": 1.0,
+      "Emergency / Infection Control": 0.0,
+      "Conflicting Priorities": 0.0,
+      "Documentation & Training": 1.0,
+      "OSHA": 0.67,
+      "Conflicting Regulations": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.62,
+      "hard": 0.4
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.2,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0040",
+    "role": "Emergency Room Nurse",
+    "experience_level": "senior",
+    "years_experience": 13.0,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Medical Waste": 0.5,
+      "Infection Control": 1.0,
+      "HIPAA": 0.67,
+      "Documentation & Training": 0.5,
+      "OSHA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Emergency / Infection Control": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.62,
+      "hard": 0.5,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 70.7,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0041",
+    "role": "Home Health Aide",
+    "experience_level": "entry",
+    "years_experience": 0.8,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 0.83,
+      "Infection Control": 0.75,
+      "State vs Federal": 0.0,
+      "OSHA": 0.0,
+      "Documentation & Training": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Medical Waste": 1.0,
+      "Security / Contingency": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Conflicting Priorities": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.57,
+      "hard": 0.5,
+      "easy": 0.78
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.83,
+        "questions_attempted": 6
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0042",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 2.3,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Documentation & Training": 0.8,
+      "Medical Waste": 1.0,
+      "Infection Control": 1.0,
+      "OSHA": 1.0,
+      "HIPAA": 0.33,
+      "Gray Areas / Governance": 1.0,
+      "State vs Federal": 1.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.88,
+      "easy": 0.9,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79.9,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0043",
+    "role": "Surgery Technician",
+    "experience_level": "senior",
+    "years_experience": 13.1,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Documentation & Training": 0.25,
+      "Infection Control": 0.67,
+      "Emergency / HIPAA": 0.0,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.67,
+      "easy": 1.0,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 6
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 71.9,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0044",
+    "role": "Lab Technician",
+    "experience_level": "senior",
+    "years_experience": 17.9,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "HIPAA": 0.8,
+      "Documentation & Training": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Medical Waste": 0.67,
+      "Emergency / Infection Control": 1.0,
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.86,
+      "easy": 1.0,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0045",
+    "role": "Medical Assistant",
+    "experience_level": "mid",
+    "years_experience": 9.1,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Documentation & Training": 0.67,
+      "HIPAA": 0.8,
+      "OSHA": 0.75,
+      "Medical Waste": 0.2,
+      "Emergency / Infection Control": 0.0,
+      "Infection Control": 0.5
+    },
+    "difficulty_scores": {
+      "hard": 0.2,
+      "medium": 0.8,
+      "easy": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.2,
+        "questions_attempted": 5,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [],
+    "needs_training": true,
+    "avg_confidence": 68.3,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0046",
+    "role": "Surgery Technician",
+    "experience_level": "junior",
+    "years_experience": 4.2,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Medical Waste": 0.5,
+      "OSHA": 0.75,
+      "Documentation & Training": 0.67,
+      "Emergency / HIPAA": 1.0,
+      "HIPAA": 0.75,
+      "Infection Control": 1.0,
+      "Emergency / Infection Control": 1.0,
+      "Gray Areas / Governance": 0.0,
+      "Conflicting Regulations": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.86,
+      "medium": 0.64,
+      "hard": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 78,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0047",
+    "role": "Medical Assistant",
+    "experience_level": "mid",
+    "years_experience": 5.6,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Documentation & Training": 0.6,
+      "HIPAA": 0.0,
+      "Gray Areas / Governance": 0.0,
+      "OSHA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Medical Waste": 0.5
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.3,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 65.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0048",
+    "role": "Home Health Aide",
+    "experience_level": "senior",
+    "years_experience": 15.5,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Gray Areas / Governance": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "HIPAA": 1.0,
+      "State vs Federal": 1.0,
+      "Conflicting Regulations": 1.0,
+      "Medical Waste": 0.67,
+      "OSHA": 0.25,
+      "Infection Control": 0.5,
+      "Security / Contingency": 1.0,
+      "Emergency / Infection Control": 1.0,
+      "Documentation & Training": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.75,
+      "hard": 0.6,
+      "easy": 0.71
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0049",
+    "role": "Clinic Administrator",
+    "experience_level": "senior",
+    "years_experience": 16.3,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "HIPAA": 0.0,
+      "OSHA": 0.67,
+      "Emergency / Infection Control": 0.0,
+      "Documentation & Training": 0.6,
+      "State vs Federal": 0.0,
+      "Medical Waste": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.89,
+      "medium": 0.5,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.1,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0050",
+    "role": "Home Health Aide",
+    "experience_level": "junior",
+    "years_experience": 4.1,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Medical Waste": 0.5,
+      "HIPAA": 0.75,
+      "Documentation & Training": 0.67,
+      "Infection Control": 0.67,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.0,
+      "easy": 0.91,
+      "medium": 0.57
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 74.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0051",
+    "role": "Surgery Technician",
+    "experience_level": "senior",
+    "years_experience": 15.7,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Infection Control": 0.5,
+      "Documentation & Training": 0.67,
+      "Complex / Multi-Regulation": 0.0,
+      "Medical Waste": 0.4,
+      "Gray Areas / Governance": 0.0,
+      "OSHA": 1.0,
+      "State vs Federal": 1.0,
+      "Emergency / Infection Control": 0.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.2,
+      "medium": 0.67,
+      "easy": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 69.2,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0052",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 3.2,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Emergency / HIPAA": 1.0,
+      "State vs Federal": 1.0,
+      "HIPAA": 0.83,
+      "Medical Waste": 0.5,
+      "Conflicting Regulations": 0.0,
+      "OSHA": 0.75,
+      "Security / Contingency": 1.0,
+      "Documentation & Training": 0.5
+    },
+    "difficulty_scores": {
+      "medium": 0.8,
+      "easy": 0.71,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.83,
+        "questions_attempted": 6
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.4,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0053",
+    "role": "Phlebotomist",
+    "experience_level": "senior",
+    "years_experience": 17.7,
+    "overall_score": 1.0,
+    "total_questions": 20,
+    "correct_answers": 20,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Documentation & Training": 1.0,
+      "Medical Waste": 1.0,
+      "OSHA": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Infection Control": 1.0,
+      "Security / Contingency": 1.0,
+      "Conflicting Priorities": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 1.0,
+      "easy": 1.0,
+      "hard": 1.0
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 88.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0054",
+    "role": "Registered Nurse",
+    "experience_level": "entry",
+    "years_experience": 0.6,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "Documentation & Training": 0.67,
+      "Medical Waste": 0.5,
+      "OSHA": 0.2,
+      "HIPAA": 1.0,
+      "State vs Federal": 1.0,
+      "Infection Control": 0.33,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.5,
+      "medium": 0.5,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.2,
+        "questions_attempted": 5,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 66.2,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0055",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 6.8,
+    "overall_score": 0.8,
+    "total_questions": 20,
+    "correct_answers": 16,
+    "category_scores": {
+      "HIPAA + OSHA": 0.0,
+      "Complex / Multi-Regulation": 1.0,
+      "HIPAA": 0.67,
+      "Infection Control": 0.83,
+      "Documentation & Training": 1.0,
+      "Security / Contingency": 0.0,
+      "Medical Waste": 1.0,
+      "Conflicting Priorities": 1.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.86,
+      "hard": 0.5,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.83,
+        "questions_attempted": 6
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 80,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0056",
+    "role": "Surgery Technician",
+    "experience_level": "entry",
+    "years_experience": 1.7,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.75,
+      "OSHA": 1.0,
+      "Documentation & Training": 1.0,
+      "Medical Waste": 0.25,
+      "Gray Areas / Governance": 0.0,
+      "HIPAA": 1.0,
+      "Security / Contingency": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.7,
+      "easy": 0.86,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0057",
+    "role": "Medical Assistant",
+    "experience_level": "senior",
+    "years_experience": 12.5,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 0.5,
+      "Emergency / Infection Control": 1.0,
+      "OSHA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Medical Waste": 0.33,
+      "HIPAA": 1.0,
+      "Documentation & Training": 1.0,
+      "State vs Federal": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "Security / Contingency": 1.0,
+      "HIPAA + OSHA": 1.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "hard": 0.4,
+      "medium": 0.8,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 75.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0058",
+    "role": "Medical Assistant",
+    "experience_level": "senior",
+    "years_experience": 19.2,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Complex / Multi-Regulation": 1.0,
+      "Security / Contingency": 0.0,
+      "Documentation & Training": 1.0,
+      "OSHA": 1.0,
+      "HIPAA": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Infection Control": 0.75,
+      "Medical Waste": 0.5
+    },
+    "difficulty_scores": {
+      "hard": 0.5,
+      "easy": 0.83,
+      "medium": 0.92
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 6
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0059",
+    "role": "Clinic Administrator",
+    "experience_level": "junior",
+    "years_experience": 2.1,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Documentation & Training": 0.67,
+      "OSHA": 0.8,
+      "Conflicting Regulations": 0.0,
+      "HIPAA": 0.67,
+      "Medical Waste": 0.67,
+      "Infection Control": 0.67,
+      "Conflicting Priorities": 0.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.89,
+      "hard": 0.0,
+      "easy": 0.62
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.3,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0060",
+    "role": "Lab Technician",
+    "experience_level": "junior",
+    "years_experience": 4.4,
+    "overall_score": 0.6,
+    "total_questions": 20,
+    "correct_answers": 12,
+    "category_scores": {
+      "HIPAA": 0.5,
+      "Conflicting Priorities": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Documentation & Training": 0.75,
+      "Medical Waste": 1.0,
+      "OSHA": 0.67,
+      "Infection Control": 0.67,
+      "Security / Contingency": 0.0,
+      "Gray Areas / Governance": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.86,
+      "hard": 0.33,
+      "medium": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 69.2,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0061",
+    "role": "Emergency Room Nurse",
+    "experience_level": "senior",
+    "years_experience": 10.4,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Infection Control": 0.8,
+      "Documentation & Training": 1.0,
+      "Medical Waste": 0.75,
+      "HIPAA": 1.0,
+      "Complex / Multi-Regulation": 1.0,
+      "OSHA": 0.67,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.71,
+      "easy": 0.91,
+      "hard": 1.0
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79.5,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0062",
+    "role": "Lab Technician",
+    "experience_level": "senior",
+    "years_experience": 15.9,
+    "overall_score": 0.95,
+    "total_questions": 20,
+    "correct_answers": 19,
+    "category_scores": {
+      "Gray Areas / Governance": 1.0,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Infection Control": 1.0,
+      "HIPAA": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Documentation & Training": 1.0,
+      "Security / Contingency": 1.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 1.0,
+      "easy": 1.0,
+      "hard": 0.75
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 86.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0063",
+    "role": "Surgery Technician",
+    "experience_level": "entry",
+    "years_experience": 1.7,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "HIPAA": 0.33,
+      "Infection Control": 0.5,
+      "Emergency / HIPAA": 0.5,
+      "Conflicting Priorities": 0.0,
+      "Medical Waste": 0.75,
+      "Documentation & Training": 0.0,
+      "OSHA": 1.0,
+      "State vs Federal": 1.0,
+      "Conflicting Regulations": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.33,
+      "medium": 0.62,
+      "easy": 0.67
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 66.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0064",
+    "role": "Medical Assistant",
+    "experience_level": "mid",
+    "years_experience": 8.6,
+    "overall_score": 0.6,
+    "total_questions": 20,
+    "correct_answers": 12,
+    "category_scores": {
+      "Medical Waste": 1.0,
+      "HIPAA": 0.0,
+      "Emergency / HIPAA": 0.0,
+      "Documentation & Training": 0.8,
+      "Conflicting Regulations": 0.0,
+      "Infection Control": 0.5,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.82,
+      "medium": 0.5,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 68.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0065",
+    "role": "Emergency Room Nurse",
+    "experience_level": "senior",
+    "years_experience": 13.5,
+    "overall_score": 0.9,
+    "total_questions": 20,
+    "correct_answers": 18,
+    "category_scores": {
+      "Medical Waste": 1.0,
+      "Infection Control": 1.0,
+      "HIPAA": 1.0,
+      "Conflicting Regulations": 0.0,
+      "OSHA": 0.8,
+      "Documentation & Training": 1.0,
+      "Complex / Multi-Regulation": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.89,
+      "hard": 0.75
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 85.1,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0066",
+    "role": "Home Health Aide",
+    "experience_level": "junior",
+    "years_experience": 2.1,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "HIPAA": 0.25,
+      "Emergency / HIPAA": 0.5,
+      "Infection Control": 0.67,
+      "State vs Federal": 0.0,
+      "Conflicting Priorities": 0.0,
+      "Documentation & Training": 0.67,
+      "OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.67,
+      "easy": 0.71,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 70.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0067",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 2.8,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Medical Waste": 1.0,
+      "Infection Control": 0.75,
+      "Documentation & Training": 0.5,
+      "State vs Federal": 1.0,
+      "Conflicting Priorities": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "OSHA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "HIPAA": 0.0,
+      "Gray Areas / Governance": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.73,
+      "easy": 0.8,
+      "hard": 0.25
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.2,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0068",
+    "role": "Emergency Room Nurse",
+    "experience_level": "senior",
+    "years_experience": 18.6,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 0.75,
+      "Documentation & Training": 0.67,
+      "Infection Control": 1.0,
+      "Gray Areas / Governance": 0.0,
+      "Medical Waste": 0.5,
+      "OSHA": 1.0,
+      "State vs Federal": 0.0,
+      "Security / Contingency": 0.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.38,
+      "easy": 1.0,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 76.7,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0069",
+    "role": "Emergency Room Nurse",
+    "experience_level": "mid",
+    "years_experience": 7.2,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 0.5,
+      "OSHA": 0.5,
+      "Gray Areas / Governance": 1.0,
+      "Conflicting Regulations": 0.0,
+      "Medical Waste": 1.0,
+      "Infection Control": 0.75,
+      "Documentation & Training": 0.75,
+      "Emergency / HIPAA": 0.0,
+      "Security / Contingency": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.75,
+      "medium": 0.71,
+      "hard": 0.4
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.6,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0070",
+    "role": "Emergency Room Nurse",
+    "experience_level": "junior",
+    "years_experience": 2.9,
+    "overall_score": 0.4,
+    "total_questions": 20,
+    "correct_answers": 8,
+    "category_scores": {
+      "Infection Control": 0.5,
+      "Medical Waste": 0.25,
+      "State vs Federal": 0.0,
+      "OSHA": 0.0,
+      "Documentation & Training": 1.0,
+      "HIPAA": 1.0,
+      "Conflicting Priorities": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.44,
+      "hard": 0.33,
+      "easy": 0.4
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.0,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.5,
+        "questions_attempted": 6,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 61.9,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0071",
+    "role": "Emergency Room Nurse",
+    "experience_level": "mid",
+    "years_experience": 6.2,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Medical Waste": 1.0,
+      "HIPAA": 0.5,
+      "Conflicting Regulations": 0.0,
+      "State vs Federal": 1.0,
+      "Complex / Multi-Regulation": 1.0,
+      "OSHA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Documentation & Training": 0.5
+    },
+    "difficulty_scores": {
+      "easy": 0.89,
+      "medium": 0.8,
+      "hard": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 78.5,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0072",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 9.9,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "OSHA": 0.75,
+      "Documentation & Training": 1.0,
+      "HIPAA": 0.4,
+      "Emergency / HIPAA": 0.5,
+      "Medical Waste": 0.33,
+      "Conflicting Priorities": 1.0,
+      "Infection Control": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.64,
+      "hard": 0.4,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 72.2,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0073",
+    "role": "Registered Nurse",
+    "experience_level": "mid",
+    "years_experience": 7.3,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Documentation & Training": 0.67,
+      "Infection Control": 0.75,
+      "Medical Waste": 1.0,
+      "HIPAA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "OSHA": 0.0,
+      "Conflicting Priorities": 1.0,
+      "State vs Federal": 1.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 0.71,
+      "medium": 0.88,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 79.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0074",
+    "role": "Lab Technician",
+    "experience_level": "junior",
+    "years_experience": 4.0,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Security / Contingency": 0.0,
+      "OSHA": 1.0,
+      "Conflicting Priorities": 1.0,
+      "Medical Waste": 0.33,
+      "Documentation & Training": 1.0,
+      "Infection Control": 0.67,
+      "Conflicting Regulations": 0.0,
+      "Gray Areas / Governance": 1.0,
+      "HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.25,
+      "medium": 0.78,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 75.4,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0075",
+    "role": "Registered Nurse",
+    "experience_level": "senior",
+    "years_experience": 16.8,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "HIPAA": 0.8,
+      "HIPAA + OSHA": 1.0,
+      "OSHA": 1.0,
+      "Infection Control": 0.25,
+      "Security / Contingency": 1.0,
+      "Medical Waste": 0.0,
+      "Documentation & Training": 1.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.67,
+      "easy": 1.0,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.3,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0076",
+    "role": "Home Health Aide",
+    "experience_level": "senior",
+    "years_experience": 17.9,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Medical Waste": 0.8,
+      "Documentation & Training": 0.75,
+      "OSHA": 1.0,
+      "Security / Contingency": 0.0,
+      "Infection Control": 0.67,
+      "State vs Federal": 1.0,
+      "Emergency / Infection Control": 0.0,
+      "HIPAA": 1.0,
+      "HIPAA + OSHA": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.88,
+      "hard": 0.2,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.0,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0077",
+    "role": "Home Health Aide",
+    "experience_level": "mid",
+    "years_experience": 8.0,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Documentation & Training": 1.0,
+      "OSHA": 1.0,
+      "HIPAA": 0.0,
+      "Medical Waste": 0.75,
+      "Conflicting Regulations": 1.0,
+      "Conflicting Priorities": 1.0,
+      "Emergency / HIPAA": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.67,
+      "medium": 0.6,
+      "easy": 0.89
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 4,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 73.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0078",
+    "role": "Phlebotomist",
+    "experience_level": "mid",
+    "years_experience": 9.1,
+    "overall_score": 0.45,
+    "total_questions": 20,
+    "correct_answers": 9,
+    "category_scores": {
+      "Infection Control": 0.33,
+      "Medical Waste": 0.33,
+      "HIPAA + OSHA": 0.0,
+      "HIPAA": 0.2,
+      "OSHA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "Documentation & Training": 1.0,
+      "Emergency / HIPAA": 0.0
+    },
+    "difficulty_scores": {
+      "hard": 0.0,
+      "medium": 0.44,
+      "easy": 0.71
+    },
+    "gaps": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.2,
+        "questions_attempted": 5,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 64.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0079",
+    "role": "Home Health Aide",
+    "experience_level": "junior",
+    "years_experience": 5.0,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "Infection Control": 0.33,
+      "HIPAA + OSHA": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "Medical Waste": 0.67,
+      "Documentation & Training": 0.4,
+      "HIPAA": 0.6,
+      "State vs Federal": 1.0,
+      "Conflicting Priorities": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.7,
+      "easy": 0.8,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 70.7,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0080",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 8.1,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Medical Waste": 0.5,
+      "Infection Control": 0.75,
+      "OSHA": 0.67,
+      "Documentation & Training": 0.75,
+      "State vs Federal": 1.0,
+      "HIPAA": 0.67
+    },
+    "difficulty_scores": {
+      "easy": 0.8,
+      "medium": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 71.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0081",
+    "role": "Home Health Aide",
+    "experience_level": "mid",
+    "years_experience": 9.6,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "HIPAA": 0.67,
+      "OSHA": 0.5,
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Documentation & Training": 0.67,
+      "Medical Waste": 0.5,
+      "Emergency / Infection Control": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.56,
+      "easy": 0.88,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / Infection Control",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 5
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71.8,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0082",
+    "role": "Clinic Administrator",
+    "experience_level": "senior",
+    "years_experience": 19.7,
+    "overall_score": 0.9,
+    "total_questions": 20,
+    "correct_answers": 18,
+    "category_scores": {
+      "Emergency / Infection Control": 1.0,
+      "Infection Control": 1.0,
+      "Complex / Multi-Regulation": 1.0,
+      "Documentation & Training": 1.0,
+      "OSHA": 0.67,
+      "Medical Waste": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "HIPAA": 0.75,
+      "Conflicting Regulations": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 1.0,
+      "medium": 0.82,
+      "easy": 1.0
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 82.2,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0083",
+    "role": "Clinic Administrator",
+    "experience_level": "mid",
+    "years_experience": 9.6,
+    "overall_score": 0.65,
+    "total_questions": 20,
+    "correct_answers": 13,
+    "category_scores": {
+      "Medical Waste": 0.33,
+      "HIPAA": 1.0,
+      "Documentation & Training": 0.33,
+      "Conflicting Regulations": 1.0,
+      "Infection Control": 0.75,
+      "OSHA": 1.0,
+      "Gray Areas / Governance": 0.0,
+      "Complex / Multi-Regulation": 1.0,
+      "HIPAA + OSHA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.44,
+      "hard": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0084",
+    "role": "Lab Technician",
+    "experience_level": "senior",
+    "years_experience": 14.0,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.75,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "HIPAA": 0.33,
+      "State vs Federal": 0.0,
+      "Documentation & Training": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "hard": 0.25,
+      "medium": 0.75,
+      "easy": 1.0
+    },
+    "gaps": [
+      {
+        "category": "State vs Federal",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 77.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0085",
+    "role": "Registered Nurse",
+    "experience_level": "junior",
+    "years_experience": 5.0,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Documentation & Training": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "OSHA": 1.0,
+      "Medical Waste": 0.5,
+      "Gray Areas / Governance": 1.0,
+      "HIPAA": 0.5,
+      "Conflicting Priorities": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.89,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 6
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 78.5,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0086",
+    "role": "Surgery Technician",
+    "experience_level": "mid",
+    "years_experience": 9.1,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Documentation & Training": 0.75,
+      "Infection Control": 0.67,
+      "Medical Waste": 0.5,
+      "Conflicting Regulations": 0.0,
+      "Emergency / Infection Control": 1.0,
+      "HIPAA": 0.67,
+      "OSHA": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.75,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / Infection Control",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.0,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0087",
+    "role": "Lab Technician",
+    "experience_level": "senior",
+    "years_experience": 18.0,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Infection Control": 0.83,
+      "State vs Federal": 1.0,
+      "HIPAA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "OSHA": 0.33,
+      "Medical Waste": 1.0,
+      "Documentation & Training": 1.0,
+      "Conflicting Priorities": 0.0,
+      "Emergency / HIPAA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.86,
+      "medium": 0.78,
+      "hard": 0.25
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.83,
+        "questions_attempted": 6
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.9,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0088",
+    "role": "Lab Technician",
+    "experience_level": "junior",
+    "years_experience": 3.1,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "OSHA": 0.75,
+      "State vs Federal": 1.0,
+      "Infection Control": 0.67,
+      "Medical Waste": 0.6,
+      "HIPAA + OSHA": 1.0,
+      "HIPAA": 0.33,
+      "Conflicting Regulations": 0.0,
+      "Documentation & Training": 0.0,
+      "Complex / Multi-Regulation": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.78,
+      "medium": 0.5,
+      "hard": 0.2
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 69.6,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0089",
+    "role": "Medical Assistant",
+    "experience_level": "senior",
+    "years_experience": 19.3,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Documentation & Training": 0.75,
+      "OSHA": 1.0,
+      "Medical Waste": 1.0,
+      "Infection Control": 0.33,
+      "HIPAA": 1.0,
+      "Conflicting Regulations": 1.0,
+      "HIPAA + OSHA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 0.56,
+      "medium": 0.8,
+      "hard": 1.0
+    },
+    "gaps": [
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 6,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 70.0,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0090",
+    "role": "Emergency Room Nurse",
+    "experience_level": "senior",
+    "years_experience": 20.0,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "Medical Waste": 1.0,
+      "OSHA": 0.8,
+      "Documentation & Training": 0.67,
+      "HIPAA": 0.67,
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 1.0,
+      "Security / Contingency": 1.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "hard": 0.67,
+      "medium": 0.71
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 80.8,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0091",
+    "role": "Phlebotomist",
+    "experience_level": "junior",
+    "years_experience": 4.4,
+    "overall_score": 0.85,
+    "total_questions": 20,
+    "correct_answers": 17,
+    "category_scores": {
+      "HIPAA": 1.0,
+      "Infection Control": 1.0,
+      "Documentation & Training": 0.75,
+      "OSHA": 0.6,
+      "Medical Waste": 1.0,
+      "Gray Areas / Governance": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.8,
+      "easy": 0.86,
+      "hard": 1.0
+    },
+    "gaps": [],
+    "strengths": [
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0092",
+    "role": "Phlebotomist",
+    "experience_level": "entry",
+    "years_experience": 1.5,
+    "overall_score": 0.55,
+    "total_questions": 20,
+    "correct_answers": 11,
+    "category_scores": {
+      "HIPAA": 0.33,
+      "Medical Waste": 1.0,
+      "Documentation & Training": 1.0,
+      "Infection Control": 0.33,
+      "OSHA": 0.67,
+      "Security / Contingency": 0.0,
+      "HIPAA + OSHA": 0.0
+    },
+    "difficulty_scores": {
+      "hard": 0.5,
+      "medium": 0.58,
+      "easy": 0.5
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.33,
+        "questions_attempted": 6,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 71.8,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0093",
+    "role": "Medical Assistant",
+    "experience_level": "senior",
+    "years_experience": 10.5,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Documentation & Training": 1.0,
+      "OSHA": 0.33,
+      "HIPAA": 0.5,
+      "Medical Waste": 0.67,
+      "Infection Control": 1.0,
+      "Emergency / HIPAA": 0.0
+    },
+    "difficulty_scores": {
+      "easy": 1.0,
+      "medium": 0.4,
+      "hard": 1.0
+    },
+    "gaps": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 4,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.7,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  },
+  {
+    "employee_id": "EMP0094",
+    "role": "Home Health Aide",
+    "experience_level": "mid",
+    "years_experience": 8.3,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Documentation & Training": 0.6,
+      "Conflicting Priorities": 1.0,
+      "Medical Waste": 1.0,
+      "HIPAA": 0.0,
+      "Infection Control": 0.67,
+      "OSHA": 1.0,
+      "Security / Contingency": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.75,
+      "easy": 0.75,
+      "medium": 0.75
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "Security / Contingency",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 72.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0095",
+    "role": "Phlebotomist",
+    "experience_level": "mid",
+    "years_experience": 7.1,
+    "overall_score": 0.45,
+    "total_questions": 20,
+    "correct_answers": 9,
+    "category_scores": {
+      "Infection Control": 0.4,
+      "HIPAA": 0.17,
+      "OSHA": 1.0,
+      "Documentation & Training": 0.5,
+      "Medical Waste": 0.0,
+      "Gray Areas / Governance": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.42,
+      "easy": 0.67,
+      "hard": 0.0
+    },
+    "gaps": [
+      {
+        "category": "Medical Waste",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.17,
+        "questions_attempted": 6,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 5
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 64.5,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0096",
+    "role": "Registered Nurse",
+    "experience_level": "entry",
+    "years_experience": 0.8,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "Infection Control": 0.33,
+      "Medical Waste": 1.0,
+      "Security / Contingency": 0.0,
+      "Documentation & Training": 0.0,
+      "HIPAA": 1.0,
+      "Emergency / HIPAA": 0.0,
+      "Conflicting Regulations": 0.0,
+      "OSHA": 0.33,
+      "State vs Federal": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.56,
+      "easy": 0.5,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "Security / Contingency",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.33,
+        "questions_attempted": 3,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Medical Waste",
+        "score": 1.0,
+        "questions_attempted": 3
+      },
+      {
+        "category": "HIPAA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "State vs Federal",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 66.5,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0097",
+    "role": "Phlebotomist",
+    "experience_level": "mid",
+    "years_experience": 7.7,
+    "overall_score": 0.75,
+    "total_questions": 20,
+    "correct_answers": 15,
+    "category_scores": {
+      "Infection Control": 1.0,
+      "Medical Waste": 0.75,
+      "OSHA": 1.0,
+      "Gray Areas / Governance": 1.0,
+      "Documentation & Training": 0.25,
+      "HIPAA": 0.5
+    },
+    "difficulty_scores": {
+      "medium": 1.0,
+      "easy": 0.8,
+      "hard": 0.4
+    },
+    "gaps": [
+      {
+        "category": "Documentation & Training",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 5
+      },
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": false,
+    "avg_confidence": 76.7,
+    "overconfident_errors": 0,
+    "training_priority": "low"
+  },
+  {
+    "employee_id": "EMP0098",
+    "role": "Lab Technician",
+    "experience_level": "entry",
+    "years_experience": 1.2,
+    "overall_score": 0.45,
+    "total_questions": 20,
+    "correct_answers": 9,
+    "category_scores": {
+      "HIPAA": 0.0,
+      "Documentation & Training": 0.6,
+      "OSHA": 0.5,
+      "Infection Control": 0.4,
+      "Medical Waste": 0.0,
+      "Gray Areas / Governance": 1.0,
+      "Emergency / HIPAA": 0.0
+    },
+    "difficulty_scores": {
+      "medium": 0.33,
+      "easy": 0.62,
+      "hard": 0.33
+    },
+    "gaps": [
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Emergency / HIPAA",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Infection Control",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 6,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Gray Areas / Governance",
+        "score": 1.0,
+        "questions_attempted": 1
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 67,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0099",
+    "role": "Phlebotomist",
+    "experience_level": "entry",
+    "years_experience": 0.7,
+    "overall_score": 0.5,
+    "total_questions": 20,
+    "correct_answers": 10,
+    "category_scores": {
+      "OSHA": 0.5,
+      "Emergency / HIPAA": 1.0,
+      "Complex / Multi-Regulation": 0.0,
+      "HIPAA": 0.25,
+      "Documentation & Training": 0.4,
+      "Medical Waste": 0.0,
+      "Infection Control": 1.0
+    },
+    "difficulty_scores": {
+      "medium": 0.55,
+      "hard": 0.25,
+      "easy": 0.6
+    },
+    "gaps": [
+      {
+        "category": "Complex / Multi-Regulation",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "Medical Waste",
+        "score": 0.0,
+        "questions_attempted": 2,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.25,
+        "questions_attempted": 4,
+        "severity": "critical"
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 0.4,
+        "questions_attempted": 5,
+        "severity": "moderate"
+      },
+      {
+        "category": "OSHA",
+        "score": 0.5,
+        "questions_attempted": 2,
+        "severity": "moderate"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "Emergency / HIPAA",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 4
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 73.2,
+    "overconfident_errors": 0,
+    "training_priority": "high"
+  },
+  {
+    "employee_id": "EMP0100",
+    "role": "Surgery Technician",
+    "experience_level": "entry",
+    "years_experience": 0.7,
+    "overall_score": 0.7,
+    "total_questions": 20,
+    "correct_answers": 14,
+    "category_scores": {
+      "Medical Waste": 0.8,
+      "Conflicting Priorities": 0.0,
+      "OSHA": 1.0,
+      "HIPAA": 0.0,
+      "HIPAA + OSHA": 1.0,
+      "Conflicting Regulations": 0.0,
+      "Documentation & Training": 1.0,
+      "Infection Control": 1.0
+    },
+    "difficulty_scores": {
+      "hard": 0.33,
+      "easy": 0.88,
+      "medium": 0.83
+    },
+    "gaps": [
+      {
+        "category": "Conflicting Priorities",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      },
+      {
+        "category": "HIPAA",
+        "score": 0.0,
+        "questions_attempted": 3,
+        "severity": "critical"
+      },
+      {
+        "category": "Conflicting Regulations",
+        "score": 0.0,
+        "questions_attempted": 1,
+        "severity": "critical"
+      }
+    ],
+    "strengths": [
+      {
+        "category": "OSHA",
+        "score": 1.0,
+        "questions_attempted": 4
+      },
+      {
+        "category": "HIPAA + OSHA",
+        "score": 1.0,
+        "questions_attempted": 1
+      },
+      {
+        "category": "Documentation & Training",
+        "score": 1.0,
+        "questions_attempted": 2
+      },
+      {
+        "category": "Infection Control",
+        "score": 1.0,
+        "questions_attempted": 3
+      }
+    ],
+    "needs_training": true,
+    "avg_confidence": 74.5,
+    "overconfident_errors": 0,
+    "training_priority": "medium"
+  }
+]

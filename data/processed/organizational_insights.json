@@ -1,0 +1,55 @@
+{
+  "total_employees": 100,
+  "avg_overall_score": 0.68,
+  "training_priority_breakdown": {
+    "medium": 38,
+    "low": 36,
+    "high": 26
+  },
+  "employees_needing_training": 67,
+  "top_organizational_gaps": [
+    {
+      "category": "HIPAA",
+      "employees_affected": 39,
+      "percentage": 39.0
+    },
+    {
+      "category": "Medical Waste",
+      "employees_affected": 34,
+      "percentage": 34.0
+    },
+    {
+      "category": "Infection Control",
+      "employees_affected": 29,
+      "percentage": 29.0
+    },
+    {
+      "category": "Complex / Multi-Regulation",
+      "employees_affected": 26,
+      "percentage": 26.0
+    },
+    {
+      "category": "Conflicting Regulations",
+      "employees_affected": 24,
+      "percentage": 24.0
+    }
+  ],
+  "role_performance": {
+    "Registered Nurse": 0.67,
+    "Surgery Technician": 0.68,
+    "Medical Assistant": 0.67,
+    "Phlebotomist": 0.65,
+    "Home Health Aide": 0.67,
+    "Lab Technician": 0.68,
+    "Clinic Administrator": 0.71,
+    "Emergency Room Nurse": 0.7
+  },
+  "experience_level_performance": {
+    "mid": 0.67,
+    "junior": 0.65,
+    "senior": 0.76,
+    "entry": 0.57
+  },
+  "urgent_training_needed": 26,
+  "avg_confidence": 73.5
+}

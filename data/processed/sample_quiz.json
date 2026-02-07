@@ -1,0 +1,42 @@
+{
+  "employee_id": "EMP0001",
+  "quiz_category": "Infection Control",
+  "total_questions": 5,
+  "questions": [
+    {
+      "question_number": 1,
+      "category": "Infection Control",
+      "difficulty": "easy",
+      "question": "What are the WHO ‘5 Moments for Hand Hygiene,’ and when do they apply during patient care?",
+      "answer": "The WHO 5 Moments for Hand Hygiene are: (1) before touching a patient, (2) before clean or aseptic procedures, (3) after body fluid exposure risk, (4) after touching a patient, and (5) after touching patient surroundings. These moments apply in all care settings and are designed to prevent transmission of pathogens between patients, staff, and the environment. Hand hygiene should be performed using alcohol-based hand rub when hands are not visibly soiled, or soap and water when they are visibly dirty or when caring for patients with certain infections such as C. difficile."
+    },
+    {
+      "question_number": 2,
+      "category": "Infection Control",
+      "difficulty": "easy",
+      "question": "If I only touched the patient’s bed rail and not the patient, do I still need to clean my hands?",
+      "answer": "Yes. Under the WHO 5 Moments, touching patient surroundings counts as a hand hygiene opportunity (Moment 5). Bed rails, call buttons, and other high-touch surfaces can be contaminated. You must perform hand hygiene after touching these surfaces to prevent cross-contamination, even if you did not have direct contact with the patient."
+    },
+    {
+      "question_number": 3,
+      "category": "Infection Control",
+      "difficulty": "medium",
+      "question": "What is the difference between standard precautions and contact precautions?",
+      "answer": "Standard precautions apply to all patients and include hand hygiene, appropriate PPE based on exposure risk, respiratory hygiene, and safe injection practices. Contact precautions are used in addition to standard precautions for patients with infections spread by direct or indirect contact, such as MRSA or C. difficile. Contact precautions typically require gown and gloves upon room entry and dedicated or disinfected equipment."
+    },
+    {
+      "question_number": 4,
+      "category": "Infection Control",
+      "difficulty": "medium",
+      "question": "When are droplet precautions required, and what PPE should be used?",
+      "answer": "Droplet precautions are used for infections transmitted via large respiratory droplets, such as influenza. In addition to standard precautions, a surgical mask is required when entering the patient’s room or when within the specified distance per facility policy. Eye protection may be required if splashes or sprays are anticipated. Patients should wear a mask when being transported outside the room."
+    },
+    {
+      "question_number": 5,
+      "category": "Infection Control",
+      "difficulty": "hard",
+      "question": "What situations require airborne precautions, and how do they differ from droplet precautions?",
+      "answer": "Airborne precautions are required for diseases transmitted via small airborne particles, such as tuberculosis or measles. These precautions require placement of the patient in an airborne infection isolation room (AIIR) and use of a fit-tested N95 respirator or higher-level protection. Unlike droplet precautions, standard surgical masks do not provide adequate protection for airborne pathogens."
+    }
+  ]
+}
