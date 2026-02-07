@@ -1,0 +1,62 @@
+[
+  {
+    "question": "During a needlestick injury response, can I share the source patient’s lab results with the exposed employee?",
+    "answer": "This scenario involves both OSHA and HIPAA. Under OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030), the exposed employee is entitled to a confidential medical evaluation and follow-up, which may include information about the exposure source when permitted. HIPAA (45 CFR §164.512(b)) allows disclosure of relevant PHI for workplace health and safety without patient authorization when required by law. Only the minimum necessary information should be shared through occupational health, not directly by clinical staff.",
+    "category": "Complex / Multi-Regulation",
+    "difficulty": "hard"
+  },
+  {
+    "question": "In an emergency, can I access a patient’s record even if I’m not assigned to their care?",
+    "answer": "Yes, but only if it is necessary to prevent or lessen a serious and imminent threat to health or safety. HIPAA permits such access under emergency circumstances (45 CFR §164.512(j)). Access must be limited to what is necessary for the emergency, documented appropriately, and reviewed afterward. Routine curiosity or convenience does not qualify.",
+    "category": "Emergency / HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What should I do if following isolation precautions delays urgent life-saving care?",
+    "answer": "In true emergencies, patient survival takes priority. Infection control guidance allows deviation from standard procedures when immediate action is required to save a life. However, staff should use the best available PPE as soon as feasible and document the circumstances. Post-event reporting and review are important to address exposure risks and compliance considerations.",
+    "category": "Emergency / Infection Control",
+    "difficulty": "hard"
+  },
+  {
+    "question": "If state privacy laws are stricter than HIPAA, which rules should we follow?",
+    "answer": "HIPAA establishes a federal floor, not a ceiling. When state laws provide greater privacy protections or patient rights, covered entities must comply with the stricter state requirements (45 CFR §160.203). Organizations should consult legal or compliance teams to ensure policies align with both federal and state regulations.",
+    "category": "State vs Federal",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A patient refuses to wear a mask during transport despite being on droplet precautions. What should I do?",
+    "answer": "This is a gray area balancing patient rights and infection control. Staff should educate the patient on the reason for masking and document refusal. If refusal continues, minimize exposure by limiting transport, maintaining distance, and ensuring staff use appropriate PPE. Document the incident per infection control and risk management policies.",
+    "category": "Conflicting Priorities",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Can workplace safety incident reports include patient identifiers?",
+    "answer": "Incident reports should include only the minimum necessary patient information. OSHA documentation may require exposure details, but HIPAA’s minimum necessary standard (45 CFR §164.502(b)) still applies. Reports should be stored securely and accessed only by authorized personnel involved in safety and compliance functions.",
+    "category": "HIPAA + OSHA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a power outage disables electronic access logs, how do we maintain HIPAA audit trail compliance?",
+    "answer": "HIPAA’s Security Rule (45 CFR §164.312(b)) requires audit controls, but it recognizes reasonable and appropriate safeguards. During downtime, organizations should implement contingency procedures such as manual access logs. Once systems are restored, records should be reconciled and retained according to policy.",
+    "category": "Security / Contingency",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Can I verbally disclose PHI to first responders during a workplace emergency?",
+    "answer": "Yes. HIPAA permits disclosure of PHI to first responders for treatment or to prevent serious harm during emergencies (45 CFR §164.512(j)). Disclosures should be limited to what is necessary for response and safety. Documentation after the event is recommended for compliance review.",
+    "category": "Emergency / HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What if OSHA requires documentation that conflicts with a patient’s request to restrict information sharing?",
+    "answer": "HIPAA allows disclosures required by law, including OSHA requirements, even if a patient has requested restrictions (45 CFR §164.522(a)(1)(i)). Staff should explain the legal obligation to the patient, limit disclosures to required elements, and document the rationale for compliance.",
+    "category": "Conflicting Regulations",
+    "difficulty": "hard"
+  },
+  {
+    "question": "How should we handle a compliance issue when guidance from accrediting bodies differs from internal policy?",
+    "answer": "When discrepancies arise, organizations should follow applicable laws and regulations first, then accrediting standards, and update internal policies accordingly. Staff should escalate the issue to compliance leadership. Documenting the decision-making process is critical to demonstrate good-faith compliance during audits or investigations.",
+    "category": "Gray Areas / Governance",
+    "difficulty": "medium"
+  }
+]

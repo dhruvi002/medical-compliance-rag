@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What are the WHO ‘5 Moments for Hand Hygiene,’ and when do they apply during patient care?",
+    "answer": "The WHO 5 Moments for Hand Hygiene are: (1) before touching a patient, (2) before clean or aseptic procedures, (3) after body fluid exposure risk, (4) after touching a patient, and (5) after touching patient surroundings. These moments apply in all care settings and are designed to prevent transmission of pathogens between patients, staff, and the environment. Hand hygiene should be performed using alcohol-based hand rub when hands are not visibly soiled, or soap and water when they are visibly dirty or when caring for patients with certain infections such as C. difficile.",
+    "category": "Infection Control",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If I only touched the patient’s bed rail and not the patient, do I still need to clean my hands?",
+    "answer": "Yes. Under the WHO 5 Moments, touching patient surroundings counts as a hand hygiene opportunity (Moment 5). Bed rails, call buttons, and other high-touch surfaces can be contaminated. You must perform hand hygiene after touching these surfaces to prevent cross-contamination, even if you did not have direct contact with the patient.",
+    "category": "Infection Control",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the difference between standard precautions and contact precautions?",
+    "answer": "Standard precautions apply to all patients and include hand hygiene, appropriate PPE based on exposure risk, respiratory hygiene, and safe injection practices. Contact precautions are used in addition to standard precautions for patients with infections spread by direct or indirect contact, such as MRSA or C. difficile. Contact precautions typically require gown and gloves upon room entry and dedicated or disinfected equipment.",
+    "category": "Infection Control",
+    "difficulty": "medium"
+  },
+  {
+    "question": "When are droplet precautions required, and what PPE should be used?",
+    "answer": "Droplet precautions are used for infections transmitted via large respiratory droplets, such as influenza. In addition to standard precautions, a surgical mask is required when entering the patient’s room or when within the specified distance per facility policy. Eye protection may be required if splashes or sprays are anticipated. Patients should wear a mask when being transported outside the room.",
+    "category": "Infection Control",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What situations require airborne precautions, and how do they differ from droplet precautions?",
+    "answer": "Airborne precautions are required for diseases transmitted via small airborne particles, such as tuberculosis or measles. These precautions require placement of the patient in an airborne infection isolation room (AIIR) and use of a fit-tested N95 respirator or higher-level protection. Unlike droplet precautions, standard surgical masks do not provide adequate protection for airborne pathogens.",
+    "category": "Infection Control",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is the difference between disinfection and sterilization?",
+    "answer": "Disinfection eliminates many or all pathogenic microorganisms on inanimate objects, except bacterial spores, and is commonly used for non-critical equipment. Sterilization destroys all forms of microbial life, including spores, and is required for critical items that enter sterile tissue or the bloodstream. The level of processing must match the intended use of the equipment per CDC and facility guidelines.",
+    "category": "Infection Control",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How often should patient rooms and high-touch surfaces be cleaned?",
+    "answer": "Patient rooms should be cleaned routinely, with high-touch surfaces such as bed rails, doorknobs, light switches, and call buttons cleaned and disinfected at least daily or more frequently if visibly soiled. Enhanced cleaning may be required for patients on isolation precautions. Follow facility environmental services protocols and approved disinfectants to ensure effective infection control.",
+    "category": "Infection Control",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If a room looks clean, do we still need to disinfect surfaces?",
+    "answer": "Yes. Many pathogens are not visible to the naked eye. Disinfection of surfaces must follow scheduled protocols regardless of visible cleanliness. Visual inspection alone is not sufficient to ensure safety; adherence to environmental cleaning standards is necessary to reduce infection risk.",
+    "category": "Infection Control",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the correct order for donning PPE before entering an isolation room?",
+    "answer": "The typical PPE donning sequence is: (1) hand hygiene, (2) gown, (3) mask or respirator, (4) goggles or face shield, and (5) gloves. Follow your facility’s specific protocol, as sequences may vary slightly based on the type of isolation precautions and PPE used.",
+    "category": "Infection Control",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the safest sequence for doffing PPE to avoid self-contamination?",
+    "answer": "PPE should be removed in a manner that minimizes contamination: commonly gloves first, then gown, followed by hand hygiene; eye protection and mask or respirator are removed last, followed by hand hygiene again. Removal should occur at the designated location per facility policy. Proper doffing is critical to preventing self-contamination and healthcare-associated infections.",
+    "category": "Infection Control",
+    "difficulty": "hard"
+  }
+]

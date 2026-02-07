@@ -1,0 +1,62 @@
+[
+  {
+    "question": "How often am I required to complete mandatory safety and compliance training?",
+    "answer": "Most healthcare compliance training must be completed at hire and annually thereafter. For example, OSHA requires annual Bloodborne Pathogens training under 29 CFR 1910.1030, and HIPAA requires periodic workforce training per 45 CFR §164.530(b). Additional training may be required when job duties change or new risks, equipment, or regulations are introduced.",
+    "category": "Documentation & Training",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What documentation is required to prove that I completed mandatory training?",
+    "answer": "Training completion must be documented with records such as attendance logs, electronic learning management system (LMS) certificates, training dates, content covered, and instructor information when applicable. OSHA and accrediting bodies like The Joint Commission expect employers to maintain verifiable records demonstrating workforce compliance with required training.",
+    "category": "Documentation & Training",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How long must employee training records be retained?",
+    "answer": "Retention periods vary by regulation. OSHA requires training records related to exposure risks to be retained for at least three years, while employee medical and exposure records must be kept for the duration of employment plus 30 years (29 CFR 1910.1020). HIPAA-related training documentation should be retained for at least six years per 45 CFR §164.530(j). Always follow the longest applicable retention requirement.",
+    "category": "Documentation & Training",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What details must be included when documenting a workplace incident?",
+    "answer": "Incident documentation should include the date and time, location, individuals involved, a factual description of what occurred, immediate actions taken, injuries or exposures, and any follow-up care. OSHA recordkeeping standards (29 CFR Part 1904) require accurate and timely documentation to support investigation, trend analysis, and regulatory compliance.",
+    "category": "Documentation & Training",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If no one was injured, do I still need to document the incident?",
+    "answer": "Yes. Near-misses and non-injury incidents should still be documented per organizational policy. While not all events are OSHA-recordable, internal documentation supports risk management, corrective actions, and audit readiness. Accrediting bodies often review near-miss reporting as part of a strong safety culture.",
+    "category": "Documentation & Training",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is an audit trail in a healthcare system, and why is it important?",
+    "answer": "An audit trail is an electronic record that tracks user access and actions within clinical or administrative systems, such as viewing or modifying patient records. Under HIPAA (45 CFR §164.312(b)), audit controls are required to monitor access to electronic PHI. Audit trails support investigations, detect inappropriate access, and demonstrate compliance during audits.",
+    "category": "Documentation & Training",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Who reviews audit trails, and what happens if inappropriate access is found?",
+    "answer": "Audit trails are typically reviewed by compliance, IT security, or privacy teams. If inappropriate access is identified, the organization conducts an investigation, documents findings, and takes corrective action, which may include retraining, disciplinary measures, or breach notification if required. Proper review and documentation are essential for HIPAA compliance.",
+    "category": "Documentation & Training",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What is a competency assessment, and when is it required?",
+    "answer": "A competency assessment evaluates an employee’s ability to safely and effectively perform job-related tasks. Competency assessments are commonly required at hire, annually, and when new equipment, procedures, or responsibilities are introduced. Accrediting bodies such as The Joint Commission expect documented evidence of staff competency for critical tasks.",
+    "category": "Documentation & Training",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How should competency assessments be documented?",
+    "answer": "Competency assessments should be documented with the employee’s name, assessed skill or task, assessment method (e.g., observation, simulation, test), date, outcome, and evaluator’s signature or credentials. Proper documentation supports regulatory compliance and demonstrates workforce readiness during audits or surveys.",
+    "category": "Documentation & Training",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What happens if I fail to complete required training or competency assessments on time?",
+    "answer": "Failure to complete required training or competency assessments may result in removal from certain duties, corrective action, or disciplinary measures per organizational policy. From a compliance perspective, incomplete training records can place the organization at risk during OSHA inspections, HIPAA audits, or accreditation surveys. Timely completion and documentation are essential for both patient safety and regulatory compliance.",
+    "category": "Documentation & Training",
+    "difficulty": "medium"
+  }
+]

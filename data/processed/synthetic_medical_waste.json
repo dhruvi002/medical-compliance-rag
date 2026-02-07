@@ -1,0 +1,62 @@
+[
+  {
+    "question": "Where should I dispose of a used needle after giving an injection?",
+    "answer": "Used needles must be disposed of immediately in an approved sharps container that is puncture-resistant, leak-proof, and labeled with the biohazard symbol, per OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030). Do not recap, bend, or remove the needle by hand. Proper sharps disposal reduces the risk of needlestick injuries and regulatory violations.",
+    "category": "Medical Waste",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What should I do if a sharps container is almost full?",
+    "answer": "Sharps containers should be replaced according to facility policy and before they reach the fill line, typically around three-quarters full. Overfilling increases the risk of needlestick injuries and violates OSHA requirements (29 CFR 1910.1030). Close and secure the container properly and notify environmental services or follow internal procedures for replacement.",
+    "category": "Medical Waste",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How do I know whether waste goes into a red biohazard bag or regular trash?",
+    "answer": "Waste contaminated with blood or other potentially infectious materials (OPIM) must be placed in a red biohazard bag or labeled container, per OSHA 29 CFR 1910.1030. Items such as blood-soaked gauze, saturated dressings, and certain PPE qualify. Items that are not visibly contaminated and do not contain OPIM may go into regular trash, following facility policy and state regulations.",
+    "category": "Medical Waste",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can gloves and gowns used for routine patient care be thrown in regular trash?",
+    "answer": "If gloves and gowns are not visibly contaminated with blood or OPIM and were used for routine, non-isolation care, they may be disposed of in regular trash per facility policy. However, PPE used during procedures involving blood or patients on certain isolation precautions should be disposed of as regulated medical waste. Always follow your organization’s waste segregation guidelines.",
+    "category": "Medical Waste",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How should I dispose of blood-soaked gauze after a procedure?",
+    "answer": "Blood-soaked or saturated gauze is considered regulated medical waste and must be disposed of in a red biohazard bag or designated biohazard container, per OSHA 29 CFR 1910.1030. Do not place it in regular trash. Proper segregation helps prevent exposure and ensures compliant handling and disposal.",
+    "category": "Medical Waste",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the proper way to handle chemical waste in a healthcare setting?",
+    "answer": "Chemical waste must be handled according to OSHA’s Hazard Communication Standard (29 CFR 1910.1200) and applicable EPA and state regulations. Do not dispose of chemicals down the drain or in regular trash unless explicitly permitted. Refer to the Safety Data Sheet (SDS) for disposal instructions and follow your facility’s chemical waste management procedures.",
+    "category": "Medical Waste",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Can expired or partially used medications be thrown in the regular trash?",
+    "answer": "No. Pharmaceutical waste must be disposed of according to facility policy and applicable regulations, such as EPA and state guidelines. Many medications, especially hazardous drugs, require disposal in designated pharmaceutical waste containers. Improper disposal can pose environmental risks and lead to regulatory noncompliance.",
+    "category": "Medical Waste",
+    "difficulty": "easy"
+  },
+  {
+    "question": "How should I dispose of chemotherapy or other hazardous drug waste?",
+    "answer": "Chemotherapy and other hazardous drug waste must be disposed of in clearly labeled hazardous pharmaceutical waste containers, often color-coded per facility policy. Handling and disposal must comply with OSHA, EPA, and USP <800> standards. Never place hazardous drug waste in red biohazard bags or regular trash unless explicitly allowed by policy.",
+    "category": "Medical Waste",
+    "difficulty": "hard"
+  },
+  {
+    "question": "What should I do if biohazardous waste leaks or spills?",
+    "answer": "Immediately restrict access to the area and don appropriate PPE. Follow your facility’s spill response procedures, which typically include cleaning and disinfection with approved agents. Report the incident to your supervisor and environmental services. Proper response is required to maintain OSHA compliance and protect staff and patients.",
+    "category": "Medical Waste",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Why is proper medical waste segregation so important?",
+    "answer": "Proper waste segregation reduces exposure risks, prevents injuries, and ensures compliance with OSHA, EPA, and state regulations. Mixing regulated medical waste with regular trash increases disposal costs and can lead to fines or safety incidents. Correct segregation protects staff, patients, and the environment while supporting regulatory compliance.",
+    "category": "Medical Waste",
+    "difficulty": "easy"
+  }
+]

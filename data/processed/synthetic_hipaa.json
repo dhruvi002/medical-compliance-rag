@@ -1,0 +1,62 @@
+[
+  {
+    "question": "I emailed a patient summary to the wrong external provider by mistake. What should I do immediately?",
+    "answer": "This is a potential HIPAA breach under 45 CFR §164.402 because PHI was disclosed to an unauthorized recipient. Immediately notify your supervisor and your organization’s Privacy Officer. Do not attempt to recall or delete the email unless instructed. The Privacy Officer will perform a breach risk assessment considering the nature of the PHI, the recipient, whether the data was viewed, and mitigation steps taken. Timely internal reporting is critical so the organization can meet breach notification timelines if required.",
+    "category": "HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How do I know if an incident qualifies as a reportable HIPAA breach?",
+    "answer": "Under HIPAA (45 CFR §164.402), a breach is generally any impermissible use or disclosure of unsecured PHI unless a documented risk assessment demonstrates a low probability that the PHI was compromised. The assessment must evaluate: (1) the type and sensitivity of PHI involved, (2) who received it, (3) whether it was actually acquired or viewed, and (4) the extent of mitigation. Only the Privacy Officer or compliance team should make the final determination.",
+    "category": "HIPAA",
+    "difficulty": "hard"
+  },
+  {
+    "question": "I need to share patient information with another department—how much information can I include?",
+    "answer": "HIPAA’s minimum necessary standard (45 CFR §164.502(b)) requires you to limit shared PHI to only what is needed to perform the intended job function. Do not include full medical records if a summary or specific data points will suffice. Follow your organization’s role-based access and data-sharing policies, and when in doubt, consult your supervisor or Privacy Officer before sharing.",
+    "category": "HIPAA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Does the minimum necessary rule apply when a provider is treating a patient?",
+    "answer": "No. HIPAA specifically exempts disclosures for treatment purposes from the minimum necessary requirement (45 CFR §164.502(b)(2)). However, providers should still use professional judgment and avoid unnecessary access. For non-treatment purposes such as billing, operations, or quality review, the minimum necessary standard does apply.",
+    "category": "HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is a Business Associate Agreement (BAA), and when is it required?",
+    "answer": "A Business Associate Agreement is a HIPAA-required contract (45 CFR §164.502(e) and §164.504(e)) between a covered entity and a vendor that creates, receives, maintains, or transmits PHI on its behalf. A BAA must be in place before sharing PHI and must define permitted uses, safeguards, breach reporting obligations, and termination conditions. Examples include cloud storage providers, billing companies, and analytics vendors.",
+    "category": "HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can we share patient data with a vendor if they say they’re HIPAA-compliant but no BAA is signed yet?",
+    "answer": "No. HIPAA requires a fully executed Business Associate Agreement before any PHI is shared with a business associate (45 CFR §164.502(e)). Verbal assurances or marketing claims of compliance are not sufficient. Sharing PHI without a BAA is a compliance violation and may constitute a reportable breach.",
+    "category": "HIPAA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A patient asked for a copy of their medical record. How long do we have to respond?",
+    "answer": "Under the HIPAA Right of Access (45 CFR §164.524), covered entities must provide access to requested records within 30 days of the request. A one-time 30-day extension is permitted if documented and communicated to the patient in writing. Records must be provided in the form and format requested when readily producible, including electronic formats.",
+    "category": "HIPAA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What should we do if a patient says there is incorrect information in their medical record?",
+    "answer": "HIPAA grants patients the right to request an amendment to their records (45 CFR §164.526). The request must be reviewed, and a decision made within 60 days, with one possible 30-day extension. If approved, the amendment must be appended to the record. If denied, the patient must receive a written explanation and be allowed to submit a statement of disagreement.",
+    "category": "HIPAA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a breach affects more than 500 patients, what additional steps are required?",
+    "answer": "For breaches involving more than 500 individuals, HIPAA requires notification to affected individuals, the U.S. Department of Health and Human Services (HHS), and prominent media outlets serving the affected area (45 CFR §164.406). Notifications must occur without unreasonable delay and no later than 60 days from discovery. Smaller breaches are reported to HHS annually.",
+    "category": "HIPAA",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Who is responsible for notifying patients after a HIPAA breach?",
+    "answer": "The covered entity is ultimately responsible for breach notification under HIPAA (45 CFR §164.404), even if the breach occurred at a business associate. Business associates must notify the covered entity according to the BAA, but the covered entity handles patient and HHS notifications unless the agreement explicitly assigns those duties.",
+    "category": "HIPAA",
+    "difficulty": "medium"
+  }
+]

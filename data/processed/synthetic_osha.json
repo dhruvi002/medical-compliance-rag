@@ -1,0 +1,62 @@
+[
+  {
+    "question": "I accidentally stuck myself with a used needle after giving an injection. What should I do first?",
+    "answer": "Under OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030), immediately wash the affected area with soap and water. Do not squeeze or scrub the wound. Report the incident right away to your supervisor and occupational health department so the exposure can be documented and evaluated. Prompt reporting ensures timely post-exposure evaluation, testing, and prophylaxis if needed.",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Is it necessary to report a needlestick injury if the needle was unused and sterile?",
+    "answer": "Yes. OSHA requires that all sharps injuries be reported and documented according to your facility’s exposure control plan (29 CFR 1910.1030). Even if the needle was unused, reporting allows the organization to track injury trends, evaluate safety devices, and comply with OSHA recordkeeping requirements.",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "I was splashed with a chemical disinfectant while cleaning a room. Where can I find information on its hazards?",
+    "answer": "Per OSHA’s Hazard Communication Standard (29 CFR 1910.1200), you should consult the Safety Data Sheet (SDS) for the chemical. SDSs provide information on health hazards, required PPE, first-aid measures, and spill response. SDSs must be readily accessible to all employees, either electronically or in a designated physical location.",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What should I do if I experience dizziness or breathing trouble after being exposed to a chemical at work?",
+    "answer": "Immediately stop work, move to a safe area with fresh air, and notify your supervisor. Seek medical evaluation as required. Under OSHA 29 CFR 1910.1200 and applicable emergency action plan requirements (29 CFR 1910.38), exposures with symptoms must be reported and investigated. Do not resume work until cleared and corrective actions are taken.",
+    "category": "OSHA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "When is a respirator required instead of a standard surgical mask?",
+    "answer": "Respirators, such as N95s, are required when employees may be exposed to airborne hazards and engineering or administrative controls are insufficient, per OSHA’s Respiratory Protection Standard (29 CFR 1910.134). Examples include care of patients with airborne infectious diseases or exposure to hazardous dusts or fumes. Use of respirators requires medical clearance, fit testing, and training.",
+    "category": "OSHA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Can I use my own N95 respirator if one is more comfortable?",
+    "answer": "No. OSHA 29 CFR 1910.134 requires that respirators be provided by the employer and used as part of a formal respiratory protection program. Using personal respirators outside the program may lead to improper fit, lack of medical clearance, and noncompliance. Always use employer-approved and fit-tested equipment.",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What information should I know from my workplace Emergency Action Plan?",
+    "answer": "OSHA’s Emergency Action Plan standard (29 CFR 1910.38) requires employees to know evacuation routes, exit locations, alarm systems, reporting procedures for emergencies, and who is responsible for coordinating response. You should also know where to assemble after evacuation and how to account for coworkers.",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If there is a fire or chemical spill, should I try to clean it up myself?",
+    "answer": "No, unless you are trained and authorized. Per OSHA 29 CFR 1910.38, employees should follow the Emergency Action Plan, evacuate if instructed, and notify designated response personnel. Attempting cleanup without training or PPE can increase risk and violate safety procedures.",
+    "category": "OSHA",
+    "difficulty": "medium"
+  },
+  {
+    "question": "How soon do I need to report a workplace injury or exposure?",
+    "answer": "Workplace injuries and exposures should be reported immediately or as soon as possible according to your facility’s policy. OSHA requires timely reporting to ensure proper documentation, medical evaluation, and hazard correction. Delayed reporting can affect treatment options and compliance with OSHA recordkeeping requirements (29 CFR Part 1904).",
+    "category": "OSHA",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What happens after I report a safety incident at work?",
+    "answer": "After reporting, the incident is documented and evaluated under OSHA requirements. The employer investigates root causes, provides medical follow-up if needed, and implements corrective actions to prevent recurrence. OSHA prohibits retaliation for reporting workplace injuries or safety concerns, ensuring employees can report incidents without fear.",
+    "category": "OSHA",
+    "difficulty": "medium"
+  }
+]
