@@ -1,0 +1,59 @@
+{
+  "period_days": 30,
+  "generated_at": "2026-02-07T10:13:10.386250",
+  "system_health": {
+    "total_queries": 7,
+    "active_users": 101,
+    "avg_response_time": 19.79,
+    "success_rate": 0.86,
+    "queries_per_day": 0.2
+  },
+  "knowledge_base": {
+    "total_documents": 98,
+    "active_documents": 98,
+    "stale_documents": 0,
+    "never_referenced": 92
+  },
+  "user_engagement": {
+    "total_users": 101,
+    "active_users": 101,
+    "never_queried": 96,
+    "engagement_rate": 5.0
+  },
+  "top_sources": [
+    {
+      "source": "Needlestick injury",
+      "times_referenced": 5
+    },
+    {
+      "source": "osha_bloodborne_pathogens.pdf",
+      "times_referenced": 3
+    },
+    {
+      "source": "Sharps waste",
+      "times_referenced": 3
+    },
+    {
+      "source": "Guideline for Hand Hygiene in Health-Care Settings.pdf",
+      "times_referenced": 2
+    },
+    {
+      "source": "OSHA_pandemic_health.pdf",
+      "times_referenced": 2
+    }
+  ],
+  "alerts": [
+    {
+      "severity": "critical",
+      "message": "Low success rate: 86% (target: >90%)"
+    },
+    {
+      "severity": "info",
+      "message": "92 documents never referenced"
+    },
+    {
+      "severity": "warning",
+      "message": "Low user engagement: 5% of users have queried system"
+    }
+  ]
+}

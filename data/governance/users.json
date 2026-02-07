@@ -1,0 +1,2024 @@
+{
+  "users": {
+    "EMP0001": {
+      "user_id": "EMP0001",
+      "name": "Registered Nurse EMP0001",
+      "email": "emp0001@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.358835",
+      "last_active": "2026-02-07T10:05:47.292155",
+      "status": "active",
+      "query_count": 3
+    },
+    "EMP0002": {
+      "user_id": "EMP0002",
+      "name": "Surgery Technician EMP0002",
+      "email": "emp0002@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359014",
+      "last_active": "2026-02-07T10:06:19.326329",
+      "status": "active",
+      "query_count": 1
+    },
+    "EMP0003": {
+      "user_id": "EMP0003",
+      "name": "Medical Assistant EMP0003",
+      "email": "emp0003@healthcare.example.com",
+      "role": "trainer",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.359107",
+      "last_active": "2026-02-07T10:06:58.714017",
+      "status": "active",
+      "query_count": 1
+    },
+    "EMP0004": {
+      "user_id": "EMP0004",
+      "name": "Registered Nurse EMP0004",
+      "email": "emp0004@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359184",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0005": {
+      "user_id": "EMP0005",
+      "name": "Registered Nurse EMP0005",
+      "email": "emp0005@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359263",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0006": {
+      "user_id": "EMP0006",
+      "name": "Medical Assistant EMP0006",
+      "email": "emp0006@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359342",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0007": {
+      "user_id": "EMP0007",
+      "name": "Phlebotomist EMP0007",
+      "email": "emp0007@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359425",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0008": {
+      "user_id": "EMP0008",
+      "name": "Home Health Aide EMP0008",
+      "email": "emp0008@healthcare.example.com",
+      "role": "trainer",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.359673",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0009": {
+      "user_id": "EMP0009",
+      "name": "Phlebotomist EMP0009",
+      "email": "emp0009@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359796",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0010": {
+      "user_id": "EMP0010",
+      "name": "Home Health Aide EMP0010",
+      "email": "emp0010@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.359926",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0011": {
+      "user_id": "EMP0011",
+      "name": "Lab Technician EMP0011",
+      "email": "emp0011@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.360055",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0012": {
+      "user_id": "EMP0012",
+      "name": "Medical Assistant EMP0012",
+      "email": "emp0012@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.360293",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0013": {
+      "user_id": "EMP0013",
+      "name": "Clinic Administrator EMP0013",
+      "email": "emp0013@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.360433",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0014": {
+      "user_id": "EMP0014",
+      "name": "Registered Nurse EMP0014",
+      "email": "emp0014@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.360566",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0015": {
+      "user_id": "EMP0015",
+      "name": "Emergency Room Nurse EMP0015",
+      "email": "emp0015@healthcare.example.com",
+      "role": "employee",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.360765",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0016": {
+      "user_id": "EMP0016",
+      "name": "Home Health Aide EMP0016",
+      "email": "emp0016@healthcare.example.com",
+      "role": "trainer",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.360946",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0017": {
+      "user_id": "EMP0017",
+      "name": "Emergency Room Nurse EMP0017",
+      "email": "emp0017@healthcare.example.com",
+      "role": "employee",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.361117",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0018": {
+      "user_id": "EMP0018",
+      "name": "Lab Technician EMP0018",
+      "email": "emp0018@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.361288",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0019": {
+      "user_id": "EMP0019",
+      "name": "Surgery Technician EMP0019",
+      "email": "emp0019@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.361473",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0020": {
+      "user_id": "EMP0020",
+      "name": "Clinic Administrator EMP0020",
+      "email": "emp0020@healthcare.example.com",
+      "role": "trainer",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.361647",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0021": {
+      "user_id": "EMP0021",
+      "name": "Registered Nurse EMP0021",
+      "email": "emp0021@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.361862",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0022": {
+      "user_id": "EMP0022",
+      "name": "Phlebotomist EMP0022",
+      "email": "emp0022@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.362071",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0023": {
+      "user_id": "EMP0023",
+      "name": "Registered Nurse EMP0023",
+      "email": "emp0023@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.362282",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0024": {
+      "user_id": "EMP0024",
+      "name": "Registered Nurse EMP0024",
+      "email": "emp0024@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.362498",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0025": {
+      "user_id": "EMP0025",
+      "name": "Medical Assistant EMP0025",
+      "email": "emp0025@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.362721",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0026": {
+      "user_id": "EMP0026",
+      "name": "Lab Technician EMP0026",
+      "email": "emp0026@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.362945",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0027": {
+      "user_id": "EMP0027",
+      "name": "Registered Nurse EMP0027",
+      "email": "emp0027@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.363161",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0028": {
+      "user_id": "EMP0028",
+      "name": "Medical Assistant EMP0028",
+      "email": "emp0028@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.363381",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0029": {
+      "user_id": "EMP0029",
+      "name": "Surgery Technician EMP0029",
+      "email": "emp0029@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.363615",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0030": {
+      "user_id": "EMP0030",
+      "name": "Clinic Administrator EMP0030",
+      "email": "emp0030@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.363846",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0031": {
+      "user_id": "EMP0031",
+      "name": "Surgery Technician EMP0031",
+      "email": "emp0031@healthcare.example.com",
+      "role": "trainer",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.364083",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0032": {
+      "user_id": "EMP0032",
+      "name": "Surgery Technician EMP0032",
+      "email": "emp0032@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.364356",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0033": {
+      "user_id": "EMP0033",
+      "name": "Surgery Technician EMP0033",
+      "email": "emp0033@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.364609",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0034": {
+      "user_id": "EMP0034",
+      "name": "Clinic Administrator EMP0034",
+      "email": "emp0034@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.364868",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0035": {
+      "user_id": "EMP0035",
+      "name": "Surgery Technician EMP0035",
+      "email": "emp0035@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.365131",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0036": {
+      "user_id": "EMP0036",
+      "name": "Clinic Administrator EMP0036",
+      "email": "emp0036@healthcare.example.com",
+      "role": "trainer",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.365410",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0037": {
+      "user_id": "EMP0037",
+      "name": "Clinic Administrator EMP0037",
+      "email": "emp0037@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.365691",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0038": {
+      "user_id": "EMP0038",
+      "name": "Medical Assistant EMP0038",
+      "email": "emp0038@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.366028",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0039": {
+      "user_id": "EMP0039",
+      "name": "Home Health Aide EMP0039",
+      "email": "emp0039@healthcare.example.com",
+      "role": "trainer",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.366468",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0040": {
+      "user_id": "EMP0040",
+      "name": "Emergency Room Nurse EMP0040",
+      "email": "emp0040@healthcare.example.com",
+      "role": "trainer",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.366781",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0041": {
+      "user_id": "EMP0041",
+      "name": "Home Health Aide EMP0041",
+      "email": "emp0041@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.367091",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0042": {
+      "user_id": "EMP0042",
+      "name": "Registered Nurse EMP0042",
+      "email": "emp0042@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.367400",
+      "last_active": "2026-02-07T10:03:56.693449",
+      "status": "active",
+      "query_count": 1
+    },
+    "EMP0043": {
+      "user_id": "EMP0043",
+      "name": "Surgery Technician EMP0043",
+      "email": "emp0043@healthcare.example.com",
+      "role": "trainer",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.367712",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0044": {
+      "user_id": "EMP0044",
+      "name": "Lab Technician EMP0044",
+      "email": "emp0044@healthcare.example.com",
+      "role": "trainer",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.368033",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0045": {
+      "user_id": "EMP0045",
+      "name": "Medical Assistant EMP0045",
+      "email": "emp0045@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.368387",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0046": {
+      "user_id": "EMP0046",
+      "name": "Surgery Technician EMP0046",
+      "email": "emp0046@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.368739",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0047": {
+      "user_id": "EMP0047",
+      "name": "Medical Assistant EMP0047",
+      "email": "emp0047@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.369089",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0048": {
+      "user_id": "EMP0048",
+      "name": "Home Health Aide EMP0048",
+      "email": "emp0048@healthcare.example.com",
+      "role": "trainer",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.369453",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0049": {
+      "user_id": "EMP0049",
+      "name": "Clinic Administrator EMP0049",
+      "email": "emp0049@healthcare.example.com",
+      "role": "trainer",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.369820",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0050": {
+      "user_id": "EMP0050",
+      "name": "Home Health Aide EMP0050",
+      "email": "emp0050@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.370191",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0051": {
+      "user_id": "EMP0051",
+      "name": "Surgery Technician EMP0051",
+      "email": "emp0051@healthcare.example.com",
+      "role": "trainer",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.370575",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0052": {
+      "user_id": "EMP0052",
+      "name": "Registered Nurse EMP0052",
+      "email": "emp0052@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.370967",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0053": {
+      "user_id": "EMP0053",
+      "name": "Phlebotomist EMP0053",
+      "email": "emp0053@healthcare.example.com",
+      "role": "trainer",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.371374",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0054": {
+      "user_id": "EMP0054",
+      "name": "Registered Nurse EMP0054",
+      "email": "emp0054@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.371773",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0055": {
+      "user_id": "EMP0055",
+      "name": "Surgery Technician EMP0055",
+      "email": "emp0055@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.372170",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0056": {
+      "user_id": "EMP0056",
+      "name": "Surgery Technician EMP0056",
+      "email": "emp0056@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.372575",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0057": {
+      "user_id": "EMP0057",
+      "name": "Medical Assistant EMP0057",
+      "email": "emp0057@healthcare.example.com",
+      "role": "trainer",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.372983",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0058": {
+      "user_id": "EMP0058",
+      "name": "Medical Assistant EMP0058",
+      "email": "emp0058@healthcare.example.com",
+      "role": "trainer",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.373399",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0059": {
+      "user_id": "EMP0059",
+      "name": "Clinic Administrator EMP0059",
+      "email": "emp0059@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.373842",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0060": {
+      "user_id": "EMP0060",
+      "name": "Lab Technician EMP0060",
+      "email": "emp0060@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.374476",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0061": {
+      "user_id": "EMP0061",
+      "name": "Emergency Room Nurse EMP0061",
+      "email": "emp0061@healthcare.example.com",
+      "role": "trainer",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.374923",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0062": {
+      "user_id": "EMP0062",
+      "name": "Lab Technician EMP0062",
+      "email": "emp0062@healthcare.example.com",
+      "role": "trainer",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.375442",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0063": {
+      "user_id": "EMP0063",
+      "name": "Surgery Technician EMP0063",
+      "email": "emp0063@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.375922",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0064": {
+      "user_id": "EMP0064",
+      "name": "Medical Assistant EMP0064",
+      "email": "emp0064@healthcare.example.com",
+      "role": "employee",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.376479",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0065": {
+      "user_id": "EMP0065",
+      "name": "Emergency Room Nurse EMP0065",
+      "email": "emp0065@healthcare.example.com",
+      "role": "trainer",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.376976",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0066": {
+      "user_id": "EMP0066",
+      "name": "Home Health Aide EMP0066",
+      "email": "emp0066@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.377461",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0067": {
+      "user_id": "EMP0067",
+      "name": "Registered Nurse EMP0067",
+      "email": "emp0067@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.377943",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0068": {
+      "user_id": "EMP0068",
+      "name": "Emergency Room Nurse EMP0068",
+      "email": "emp0068@healthcare.example.com",
+      "role": "trainer",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.378438",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0069": {
+      "user_id": "EMP0069",
+      "name": "Emergency Room Nurse EMP0069",
+      "email": "emp0069@healthcare.example.com",
+      "role": "employee",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.378928",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0070": {
+      "user_id": "EMP0070",
+      "name": "Emergency Room Nurse EMP0070",
+      "email": "emp0070@healthcare.example.com",
+      "role": "employee",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.379440",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0071": {
+      "user_id": "EMP0071",
+      "name": "Emergency Room Nurse EMP0071",
+      "email": "emp0071@healthcare.example.com",
+      "role": "employee",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.379938",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0072": {
+      "user_id": "EMP0072",
+      "name": "Surgery Technician EMP0072",
+      "email": "emp0072@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.380474",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0073": {
+      "user_id": "EMP0073",
+      "name": "Registered Nurse EMP0073",
+      "email": "emp0073@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.380997",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0074": {
+      "user_id": "EMP0074",
+      "name": "Lab Technician EMP0074",
+      "email": "emp0074@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.381520",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0075": {
+      "user_id": "EMP0075",
+      "name": "Registered Nurse EMP0075",
+      "email": "emp0075@healthcare.example.com",
+      "role": "trainer",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.382085",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0076": {
+      "user_id": "EMP0076",
+      "name": "Home Health Aide EMP0076",
+      "email": "emp0076@healthcare.example.com",
+      "role": "trainer",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.382615",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0077": {
+      "user_id": "EMP0077",
+      "name": "Home Health Aide EMP0077",
+      "email": "emp0077@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.383152",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0078": {
+      "user_id": "EMP0078",
+      "name": "Phlebotomist EMP0078",
+      "email": "emp0078@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.383695",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0079": {
+      "user_id": "EMP0079",
+      "name": "Home Health Aide EMP0079",
+      "email": "emp0079@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.384265",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0080": {
+      "user_id": "EMP0080",
+      "name": "Surgery Technician EMP0080",
+      "email": "emp0080@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.384842",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0081": {
+      "user_id": "EMP0081",
+      "name": "Home Health Aide EMP0081",
+      "email": "emp0081@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.385417",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0082": {
+      "user_id": "EMP0082",
+      "name": "Clinic Administrator EMP0082",
+      "email": "emp0082@healthcare.example.com",
+      "role": "trainer",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.385991",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0083": {
+      "user_id": "EMP0083",
+      "name": "Clinic Administrator EMP0083",
+      "email": "emp0083@healthcare.example.com",
+      "role": "employee",
+      "department": "Clinic Administrator",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.386584",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0084": {
+      "user_id": "EMP0084",
+      "name": "Lab Technician EMP0084",
+      "email": "emp0084@healthcare.example.com",
+      "role": "trainer",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.387204",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0085": {
+      "user_id": "EMP0085",
+      "name": "Registered Nurse EMP0085",
+      "email": "emp0085@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.387797",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0086": {
+      "user_id": "EMP0086",
+      "name": "Surgery Technician EMP0086",
+      "email": "emp0086@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.388421",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0087": {
+      "user_id": "EMP0087",
+      "name": "Lab Technician EMP0087",
+      "email": "emp0087@healthcare.example.com",
+      "role": "trainer",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.389026",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0088": {
+      "user_id": "EMP0088",
+      "name": "Lab Technician EMP0088",
+      "email": "emp0088@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.389746",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0089": {
+      "user_id": "EMP0089",
+      "name": "Medical Assistant EMP0089",
+      "email": "emp0089@healthcare.example.com",
+      "role": "trainer",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.390412",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0090": {
+      "user_id": "EMP0090",
+      "name": "Emergency Room Nurse EMP0090",
+      "email": "emp0090@healthcare.example.com",
+      "role": "trainer",
+      "department": "Emergency Room Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.391053",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0091": {
+      "user_id": "EMP0091",
+      "name": "Phlebotomist EMP0091",
+      "email": "emp0091@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.391680",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0092": {
+      "user_id": "EMP0092",
+      "name": "Phlebotomist EMP0092",
+      "email": "emp0092@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.392344",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0093": {
+      "user_id": "EMP0093",
+      "name": "Medical Assistant EMP0093",
+      "email": "emp0093@healthcare.example.com",
+      "role": "trainer",
+      "department": "Medical Assistant",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": true,
+        "access_level": "elevated"
+      },
+      "created_date": "2026-02-07T10:11:10.392990",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0094": {
+      "user_id": "EMP0094",
+      "name": "Home Health Aide EMP0094",
+      "email": "emp0094@healthcare.example.com",
+      "role": "employee",
+      "department": "Home Health Aide",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.393633",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0095": {
+      "user_id": "EMP0095",
+      "name": "Phlebotomist EMP0095",
+      "email": "emp0095@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.394329",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0096": {
+      "user_id": "EMP0096",
+      "name": "Registered Nurse EMP0096",
+      "email": "emp0096@healthcare.example.com",
+      "role": "employee",
+      "department": "Registered Nurse",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.395000",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0097": {
+      "user_id": "EMP0097",
+      "name": "Phlebotomist EMP0097",
+      "email": "emp0097@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.395672",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0098": {
+      "user_id": "EMP0098",
+      "name": "Lab Technician EMP0098",
+      "email": "emp0098@healthcare.example.com",
+      "role": "employee",
+      "department": "Lab Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.396358",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "EMP0099": {
+      "user_id": "EMP0099",
+      "name": "Phlebotomist EMP0099",
+      "email": "emp0099@healthcare.example.com",
+      "role": "employee",
+      "department": "Phlebotomist",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.397068",
+      "last_active": "2026-02-07T10:03:56.904090",
+      "status": "active",
+      "query_count": 1
+    },
+    "EMP0100": {
+      "user_id": "EMP0100",
+      "name": "Surgery Technician EMP0100",
+      "email": "emp0100@healthcare.example.com",
+      "role": "employee",
+      "department": "Surgery Technician",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": false,
+        "can_modify_knowledge_base": false,
+        "can_manage_users": false,
+        "can_view_audit_logs": false,
+        "access_level": "standard"
+      },
+      "created_date": "2026-02-07T10:11:10.397777",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    },
+    "ADMIN001": {
+      "user_id": "ADMIN001",
+      "name": "System Administrator",
+      "email": "admin@healthcare.example.com",
+      "role": "admin",
+      "department": "IT",
+      "permissions": {
+        "can_query_rag": true,
+        "can_view_own_analytics": true,
+        "can_view_org_analytics": true,
+        "can_modify_knowledge_base": true,
+        "can_manage_users": true,
+        "can_view_audit_logs": true,
+        "access_level": "full"
+      },
+      "created_date": "2026-02-07T10:11:10.398639",
+      "last_active": null,
+      "status": "active",
+      "query_count": 0
+    }
+  }
+}

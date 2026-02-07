@@ -1,3 +1,4 @@
+cat > .gitignore << 'EOF'
 # Virtual environment
 venv/
 env/
@@ -6,8 +7,13 @@ __pycache__/
 
 # Large data files - don't upload to GitHub
 data/raw/*.pdf
-data/processed/*.json
-data/synthetic/*.json
+data/processed/documents.json
+data/processed/wikipedia_compliance.json
+data/processed/chunks.json
+data/processed/synthetic_qa_*.json
+
+# ChromaDB database - IMPORTANT: exclude entire directory
+chroma_db/
 
 # OS files
 .DS_Store
@@ -23,3 +29,4 @@ data/synthetic/*.json
 
 # Logs
 *.log
+EOF

@@ -2,7 +2,9 @@
 import os
 from typing import List, Dict, Optional
 from vector_store import VectorStore
+from audit_logger import AuditLogger  # ADD THIS IMPORT
 import ollama
+import time  # ADD THIS IMPORT
 
 class RAGSystem:
     """Complete RAG system for medical compliance Q&A"""
@@ -10,7 +12,8 @@ class RAGSystem:
     def __init__(self, 
                  vector_store: VectorStore,
                  model_name: str = "llama3.1:8b",
-                 n_results: int = 5):
+                 n_results: int = 5,
+                 enable_audit: bool = True):  # ADD THIS PARAMETER
         """
         Initialize RAG system
         
@@ -18,10 +21,16 @@ class RAGSystem:
             vector_store: Initialized VectorStore instance
             model_name: Ollama model to use
             n_results: Number of chunks to retrieve
+            enable_audit: Enable audit logging (default: True)
         """
         self.vector_store = vector_store
         self.model_name = model_name
         self.n_results = n_results
+        
+        # Initialize audit logger - ADD THIS
+        self.enable_audit = enable_audit
+        if enable_audit:
+            self.audit_logger = AuditLogger()
         
         # Test Ollama connection
         try:
@@ -103,7 +112,7 @@ ANSWER:"""
                 prompt=prompt,
                 options={
                     'temperature': temperature,
-                    'num_predict': 500,  # Max tokens to generate
+                    'num_predict': 500,
                 }
             )
             
@@ -118,73 +127,113 @@ ANSWER:"""
                 'model': self.model_name
             }
     
-    def query(self, question: str, verbose: bool = False) -> Dict:
+    def query(self, question: str, user_id: str = "anonymous", verbose: bool = False) -> Dict:  # ADD user_id PARAMETER
         """
         Complete RAG pipeline: retrieve + generate
         
         Args:
             question: User's question
+            user_id: User identifier for audit logging
             verbose: If True, print intermediate steps
         
         Returns:
             Dict with answer, sources, and metadata
         """
+        start_time = time.time()  # ADD THIS
+        error_msg = None  # ADD THIS
+        
         if verbose:
             print(f"\n{'='*60}")
             print(f"QUERY: {question}")
             print(f"{'='*60}")
         
-        # Step 1: Retrieve relevant chunks
-        if verbose:
-            print("\n[1/3] Retrieving relevant documents...")
+        try:  # ADD TRY-EXCEPT WRAPPER
+            # Step 1: Retrieve relevant chunks
+            if verbose:
+                print("\n[1/3] Retrieving relevant documents...")
+            
+            context_docs, context_metadata = self.retrieve_context(question)
+            
+            if verbose:
+                print(f"  ✓ Retrieved {len(context_docs)} relevant chunks")
+                for i, meta in enumerate(context_metadata, 1):
+                    print(f"    {i}. {meta.get('source_file', 'Unknown')}")
+            
+            # Step 2: Build prompt
+            if verbose:
+                print("\n[2/3] Building prompt with context...")
+            
+            prompt = self.build_prompt(question, context_docs, context_metadata)
+            
+            if verbose:
+                print(f"  ✓ Prompt built ({len(prompt)} characters)")
+            
+            # Step 3: Generate answer
+            if verbose:
+                print(f"\n[3/3] Generating answer with {self.model_name}...")
+            
+            result = self.generate_answer(prompt)
+            
+            if verbose:
+                print(f"  ✓ Answer generated")
+            
+            # Extract source files
+            source_files = [meta.get('source_file', 'Unknown') for meta in context_metadata]
+            
+            # Compile full response
+            response = {
+                'question': question,
+                'answer': result['answer'],
+                'sources': [
+                    {
+                        'file': meta.get('source_file', 'Unknown'),
+                        'chunk_id': meta.get('chunk_id', 'Unknown'),
+                        'preview': doc[:200] + '...' if len(doc) > 200 else doc
+                    }
+                    for doc, meta in zip(context_docs, context_metadata)
+                ],
+                'model': result['model'],
+                'num_sources': len(context_docs)
+            }
+            
+        except Exception as e:  # ADD EXCEPTION HANDLING
+            error_msg = str(e)
+            source_files = []
+            response = {
+                'question': question,
+                'answer': f"Error processing query: {error_msg}",
+                'sources': [],
+                'model': self.model_name,
+                'num_sources': 0
+            }
         
-        context_docs, context_metadata = self.retrieve_context(question)
+        # Log to audit trail - ADD THIS SECTION
+        response_time = time.time() - start_time
         
-        if verbose:
-            print(f"  ✓ Retrieved {len(context_docs)} relevant chunks")
-            for i, meta in enumerate(context_metadata, 1):
-                print(f"    {i}. {meta.get('source_file', 'Unknown')}")
+        if self.enable_audit:
+            query_id = self.audit_logger.log_query(
+                user_id=user_id,
+                query=question,
+                sources_retrieved=source_files,
+                answer_generated=(error_msg is None),
+                response_time_seconds=response_time,
+                model_used=self.model_name,
+                num_sources=len(source_files),
+                error=error_msg
+            )
+            
+            if verbose:
+                print(f"\n✓ Query logged: {query_id}")
         
-        # Step 2: Build prompt
-        if verbose:
-            print("\n[2/3] Building prompt with context...")
-        
-        prompt = self.build_prompt(question, context_docs, context_metadata)
-        
-        if verbose:
-            print(f"  ✓ Prompt built ({len(prompt)} characters)")
-        
-        # Step 3: Generate answer
-        if verbose:
-            print(f"\n[3/3] Generating answer with {self.model_name}...")
-        
-        result = self.generate_answer(prompt)
-        
-        if verbose:
-            print(f"  ✓ Answer generated")
-        
-        # Compile full response
-        return {
-            'question': question,
-            'answer': result['answer'],
-            'sources': [
-                {
-                    'file': meta.get('source_file', 'Unknown'),
-                    'chunk_id': meta.get('chunk_id', 'Unknown'),
-                    'preview': doc[:200] + '...' if len(doc) > 200 else doc
-                }
-                for doc, meta in zip(context_docs, context_metadata)
-            ],
-            'model': result['model'],
-            'num_sources': len(context_docs)
-        }
+        return response
     
-    def batch_query(self, questions: List[str], verbose: bool = False) -> List[Dict]:
+    def batch_query(self, questions: List[str], user_id: str = "anonymous", verbose: bool = False) -> List[Dict]:  # ADD user_id
         """
         Process multiple questions
         
         Args:
             questions: List of questions
+            user_id: User identifier for audit logging
             verbose: Print progress
         
         Returns:
@@ -198,7 +247,7 @@ ANSWER:"""
                 print(f"PROCESSING QUESTION {i}/{len(questions)}")
                 print(f"{'#'*60}")
             
-            result = self.query(question, verbose=verbose)
+            result = self.query(question, user_id=user_id, verbose=verbose)
             results.append(result)
         
         return results
@@ -216,9 +265,9 @@ def main():
     stats = vector_store.get_stats()
     print(f"✓ Vector store loaded ({stats['total_chunks']} chunks)")
     
-    # Initialize RAG system
-    print("\nInitializing RAG system...")
-    rag = RAGSystem(vector_store, model_name="llama3.1:8b", n_results=5)
+    # Initialize RAG system with audit logging
+    print("\nInitializing RAG system with audit logging...")
+    rag = RAGSystem(vector_store, model_name="llama3.1:8b", n_results=5, enable_audit=True)
     
     # Test questions
     test_questions = [
@@ -228,7 +277,7 @@ def main():
     ]
     
     print(f"\n{'='*60}")
-    print("TESTING RAG SYSTEM")
+    print("TESTING RAG SYSTEM WITH AUDIT LOGGING")
     print(f"{'='*60}")
     
     for i, question in enumerate(test_questions, 1):
@@ -236,18 +285,24 @@ def main():
         print(f"TEST {i}/{len(test_questions)}")
         print(f"{'='*60}")
         
-        result = rag.query(question, verbose=True)
+        # Query with user ID
+        result = rag.query(question, user_id=f"EMP{i:04d}", verbose=True)
         
         print(f"\n{'─'*60}")
         print("ANSWER:")
         print(f"{'─'*60}")
-        print(result['answer'])
-        
-        print(f"\n{'─'*60}")
-        print("SOURCES:")
-        print(f"{'─'*60}")
-        for j, source in enumerate(result['sources'], 1):
-            print(f"{j}. {source['file']}")
+        print(result['answer'][:300] + "...")  # Show first 300 chars
+    
+    # Show audit statistics
+    print(f"\n\n{'='*60}")
+    print("AUDIT STATISTICS")
+    print(f"{'='*60}")
+    
+    stats = rag.audit_logger.get_statistics(days=1)
+    print(f"\nTotal Queries Logged: {stats['total_queries']}")
+    print(f"Unique Users: {stats['unique_users']}")
+    print(f"Avg Response Time: {stats['avg_response_time_seconds']}s")
+    print(f"Success Rate: {stats['success_rate']:.0%}")
 
 
 if __name__ == '__main__':
