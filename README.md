@@ -1,5 +1,7 @@
 # Medical Compliance RAG System
 
+🔗 **[Live Demo](https://medical-compliance-rag.streamlit.app/)** ← Try it now!
+
 A Retrieval-Augmented Generation (RAG) system for answering medical compliance questions. 
 
 ## 🎯 Project Overview
