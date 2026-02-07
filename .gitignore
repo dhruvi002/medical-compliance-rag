@@ -1,0 +1,25 @@
+# Virtual environment
+venv/
+env/
+*.pyc
+__pycache__/
+
+# Large data files - don't upload to GitHub
+data/raw/*.pdf
+data/processed/*.json
+data/synthetic/*.json
+
+# OS files
+.DS_Store
+*.swp
+._.DS_Store
+
+# Ollama models (too large)
+*.gguf
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
