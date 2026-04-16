@@ -4,14 +4,14 @@
 
 A Retrieval-Augmented Generation (RAG) system for answering medical compliance questions. 
 
-## 🎯 Project Overview
+## Project Overview
 
 This project builds a comprehensive AI assistant for healthcare compliance questions, combining:
 - **RAG architecture** for accurate, source-grounded responses
 - **Local LLM inference** using Ollama (zero API costs)
 - **Vector search** with ChromaDB
-- **NLP-based skill gap analysis** (upcoming)
-- **Impact measurement dashboards** (upcoming)
+- **NLP-based skill gap analysis**
+- **Impact measurement dashboards**
 
 **Target users:** ~100 healthcare workers  
 **Budget constraint:** $0 (all open-source/free tier)  
@@ -39,7 +39,7 @@ This project builds a comprehensive AI assistant for healthcare compliance quest
 
 ---
 
-## 🛠️ Technical Stack
+## Technical Stack
 
 ### Infrastructure
 - **LLM:** Ollama (llama3.1:8b, mistral:7b)
@@ -58,7 +58,7 @@ This project builds a comprehensive AI assistant for healthcare compliance quest
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 medical-rag-system/
 ├── data/
@@ -81,7 +81,7 @@ medical-rag-system/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 ```bash
@@ -120,7 +120,7 @@ Expected output:
 ```
 ---
 
-## 📊 Dataset Statistics
+## Dataset Statistics
 
 ### PDF Processing Results
 ```
@@ -141,7 +141,7 @@ Failed extractions: 0
 
 ---
 
-## 🎓 This project demonstrates:
+## This project demonstrates:
 
 1. **RAG System Design**
    - Document chunking strategies
@@ -169,7 +169,7 @@ Failed extractions: 0
 
 ---
 
-## 📝 Data Sources
+## Data Sources
 
 All data is publicly available:
 
@@ -180,15 +180,14 @@ All data is publicly available:
 - **Synthetic Q&As:** Generated using ChatGPT free tier
 ---
 
-## 👤 Author
+## Author
 
 **Dhruvi Shah**  
-AI/ML Engineer  
+AI-ML Engineer
 Student- University of Massachusetts, Amherst
-Masters in Computer Science
 ---
 
-## 📄 License
+## License
 
 This project is for educational/portfolio purposes.  
 Government documents are public domain.  
