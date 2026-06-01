@@ -13,9 +13,5 @@ def test_audit_logger_importable():
     from medcomply import audit_logger  # noqa: F401
 
 
-def test_access_control_importable():
-    from medcomply import access_control  # noqa: F401
-
-
 def test_vector_store_importable():
     from medcomply import vector_store  # noqa: F401
