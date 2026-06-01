@@ -33,13 +33,13 @@ def _rrf_merge(
 class VectorStore:
     """Qdrant-backed hybrid retrieval with dense + sparse + rerank + RBAC."""
 
-    def __init__(self, settings: Settings, qdrant_url: str = ":memory:"):
+    def __init__(self, settings: Settings, qdrant_url: str = ":memory:", qdrant_api_key: str = ""):
         from fastembed import SparseTextEmbedding
         from qdrant_client import QdrantClient
         from sentence_transformers import CrossEncoder, SentenceTransformer
 
         self._settings = settings
-        self._client = QdrantClient(qdrant_url)
+        self._client = QdrantClient(qdrant_url, api_key=qdrant_api_key or None)
         self._dense = SentenceTransformer(settings.dense_model)
         self._sparse = SparseTextEmbedding(settings.sparse_model)
         self._reranker = CrossEncoder(settings.reranker_model)

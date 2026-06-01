@@ -36,3 +36,6 @@ htmlcov/
 
 # Auth config — contains bcrypt hashes, never commit
 config/
+
+# Streamlit secrets — never commit real keys
+.streamlit/secrets.toml

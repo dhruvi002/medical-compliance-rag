@@ -81,4 +81,11 @@ class AuditLogger:
             unique = conn.execute(
                 "SELECT COUNT(DISTINCT user_id) FROM audit_log"
             ).fetchone()[0]
-        return {"total_queries": total, "unique_users": unique}
+            avg_latency = conn.execute(
+                "SELECT AVG(latency_ms) FROM audit_log"
+            ).fetchone()[0]
+        return {
+            "total_queries": total,
+            "unique_users": unique,
+            "avg_latency_ms": avg_latency or 0.0,
+        }
