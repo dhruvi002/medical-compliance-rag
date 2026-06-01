@@ -1,6 +1,6 @@
 # Medical Compliance RAG System
 
-A Retrieval-Augmented Generation system for answering healthcare compliance questions, grounded in official OSHA, HIPAA, and CDC documents.
+A Retrieval-Augmented Generation system for answering healthcare compliance questions across HIPAA, OSHA, and infection-control domains.
 
 ---
 
@@ -52,14 +52,42 @@ A Retrieval-Augmented Generation system for answering healthcare compliance ques
 
 ## Dataset
 
-| Source | Count | Words |
-|---|---|---|
-| Government PDFs (OSHA, HIPAA, CDC) | 88 | ~274,857 |
-| Wikipedia articles | 10 | ~13,645 |
-| Synthetic Q&A pairs | 60 | — |
-| **Total** | **158** | **~288,502** |
+The index is populated from synthetic compliance documents generated to match the structure and terminology of real HIPAA, OSHA, and infection-control regulations. No actual PHI or proprietary data is used.
 
-All source documents are publicly available government publications or CC BY-SA licensed Wikipedia content.
+| Source | Files |
+|---|---|
+| Synthetic HIPAA compliance text | `data/processed/synthetic_hipaa.json` |
+| Synthetic OSHA compliance text | `data/processed/synthetic_osha.json` |
+| Synthetic infection-control text | `data/processed/synthetic_infection_control.json` |
+| Synthetic medical-waste text | `data/processed/synthetic_medical_waste.json` |
+| Synthetic documentation/training text | `data/processed/synthetic_documentation_training.json` |
+| Synthetic edge-case scenarios | `data/processed/synthetic_edge_cases.json` |
+| Labeled evaluation Q&A pairs | `data/eval/eval_set.json` (60 pairs) |
+
+---
+
+## Evaluation
+
+Evaluated on a hand-labeled set of 60 query→chunk pairs derived from the same synthetic documents used to populate the index. Numbers reflect performance on the synthetic corpus and have not been benchmarked against external datasets.
+
+**Retrieval** (n=60, in-memory Qdrant):
+
+| Metric | @5 | @10 |
+|---|---|---|
+| Hit Rate | 0.7333 | 0.8167 |
+| MRR | 0.6083 | 0.6394 |
+| nDCG | 0.6612 | 0.7031 |
+
+**Generation** (n=60, judge: `groq/llama-3.1-8b-instant`):
+
+| Metric | Score |
+|---|---|
+| Faithfulness | 0.8124 |
+| Answer Relevancy | 0.7643 |
+| Context Precision | 0.6912 |
+| Context Recall | 0.7388 |
+
+Full report: [`reports/eval_2026-06-01.md`](reports/eval_2026-06-01.md). To reproduce: `uv run python scripts/run_eval.py`.
 
 ---
 
