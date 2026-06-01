@@ -12,16 +12,17 @@ A Retrieval-Augmented Generation system for answering healthcare compliance ques
 | Dependency management (`uv` + `pyproject.toml`) | Implemented |
 | Linting (`ruff`) | Implemented |
 | Test suite (`pytest`) | Implemented |
-| Vector store (Qdrant) | Not present — ChromaDB used currently |
-| Dense embeddings (`BAAI/bge-base-en-v1.5`) | Not present — `nomic-embed-text` used currently |
-| Sparse retrieval / hybrid search (BM25 via `fastembed`) | Not present |
-| Reranker (`BAAI/bge-reranker-v2-m3`) | Not present |
-| Orchestration (LlamaIndex) | Not present |
-| Auth (`streamlit-authenticator`) | Not present — simulated user list |
-| Audit logging (SQLite + UUID) | Partial — flat-file JSON, no UUID constraint |
+| Vector store (Qdrant, hybrid dense + sparse + rerank + RBAC) | Implemented |
+| Dense embeddings (`BAAI/bge-base-en-v1.5`) | Implemented |
+| Sparse retrieval / hybrid search (SPLADE via `fastembed`) | Implemented |
+| Reranker (`BAAI/bge-reranker-v2-m3`) | Implemented |
+| Auth (`streamlit-authenticator`, bcrypt) | Implemented |
+| Audit logging (SQLite + UUID) | Implemented |
 | Evaluation (RAGAS + retrieval metrics) | Implemented — Hit Rate / MRR / nDCG + RAGAS generation metrics |
 | Skill-gap analysis | Implemented — semantic similarity scoring (cosine distance over `bge-base-en-v1.5` embeddings) with KMeans cohort theme detection |
 | Local LLM (Ollama) | Implemented |
+| Live demo (Qdrant Cloud + Groq, real inference) | Implemented |
+| About/Analytics stats computed from live DB | Implemented |
 | Streamlit frontend | Implemented |
 
 ---
@@ -39,7 +40,7 @@ A Retrieval-Augmented Generation system for answering healthcare compliance ques
 | Sparse retrieval | BM25 / SPLADE via `fastembed` |
 | Reranker | `BAAI/bge-reranker-v2-m3` (cross-encoder, top-50 → top-5) |
 | Fusion | Reciprocal Rank Fusion (RRF) |
-| Orchestration | LlamaIndex |
+| Orchestration | Custom `RAGSystem` (no framework dependency) |
 | Local LLM | Ollama — Llama 3.1 8B / Qwen 2.5 7B |
 | Hosted LLM | Groq free tier |
 | Auth | `streamlit-authenticator` (bcrypt) |

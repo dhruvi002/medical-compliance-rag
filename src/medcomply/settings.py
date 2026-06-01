@@ -20,6 +20,9 @@ class Settings(BaseModel):
     temperature: float = 0.1
     top_p: float = 0.9
 
+    # Deployment
+    qdrant_url: str = ":memory:"
+
     # Chunking (read by ingest scripts; not used at query time)
     chunk_size: int = 500
     chunk_overlap: int = 50
