@@ -33,3 +33,6 @@ chroma_db/
 .coverage
 .coverage.*
 htmlcov/
+
+# Auth config — contains bcrypt hashes, never commit
+config/

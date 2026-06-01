@@ -21,6 +21,7 @@ dependencies = [
     "fastembed>=0.3",
     "llama-index-core>=0.10",
     "streamlit-authenticator>=0.3",
+    "groq>=0.9",
 ]
 
 [project.optional-dependencies]
@@ -44,3 +45,17 @@ ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[tool.coverage.run]
+omit = [
+    # Pre-existing modules not yet targeted by any phase
+    "*/medcomply/access_control.py",
+    "*/medcomply/compliance_dashboard.py",
+    "*/medcomply/dashboard_summary.py",
+    "*/medcomply/document_registry.py",
+    "*/medcomply/employee_profiles.py",
+    "*/medcomply/evaluate.py",
+    "*/medcomply/interactive.py",
+    "*/medcomply/personalized_learning.py",
+    "*/medcomply/skill_gap_analyzer.py",
+]

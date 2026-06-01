@@ -1,179 +1,173 @@
-# src/vector_store.py
-import json
-import os
-import time
 from typing import Dict, List
 
-import chromadb
-from sentence_transformers import SentenceTransformer
+from .settings import Settings
+
+
+def _rrf_merge(
+    dense_hits: List[Dict],
+    sparse_hits: List[Dict],
+    k: int,
+) -> List[Dict]:
+    """Reciprocal Rank Fusion over two ranked hit lists.
+
+    Each hit must have a 'id' key. Returns merged list sorted by descending
+    RRF score, preserving the payload from whichever list first supplied the id.
+    """
+    scores: Dict[str, float] = {}
+    payloads: Dict[str, Dict] = {}
+
+    for rank, hit in enumerate(dense_hits):
+        hit_id = hit["id"]
+        scores[hit_id] = scores.get(hit_id, 0.0) + 1.0 / (k + rank + 1)
+        payloads.setdefault(hit_id, hit)
+
+    for rank, hit in enumerate(sparse_hits):
+        hit_id = hit["id"]
+        scores[hit_id] = scores.get(hit_id, 0.0) + 1.0 / (k + rank + 1)
+        payloads.setdefault(hit_id, hit)
+
+    merged = sorted(scores.keys(), key=lambda i: scores[i], reverse=True)
+    return [payloads[i] for i in merged]
 
 
 class VectorStore:
-    """Manage ChromaDB vector database for RAG"""
-    
-    def __init__(self, persist_directory='./chroma_db', collection_name='medical_compliance'):
-        """
-        Initialize ChromaDB client and collection
-        
-        Args:
-            persist_directory: Where to store the database
-            collection_name: Name of the collection
-        """
-        self.persist_directory = persist_directory
-        self.collection_name = collection_name
-        
-        # Initialize ChromaDB client
-        self.client = chromadb.PersistentClient(path=persist_directory)
-        
-        # Get or create collection
-        self.collection = self.client.get_or_create_collection(
-            name=collection_name,
-            metadata={"description": "Medical compliance documents for RAG"}
-        )
-        
-        # Initialize embedding model
-        print("Loading embedding model...")
-        self.embedding_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
-        print("✓ Embedding model loaded")
-    
-    def generate_embeddings(self, texts: List[str], batch_size=32) -> List[List[float]]:
-        """Generate embeddings for texts in batches"""
-        embeddings = []
-        
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i+batch_size]
-            batch_embeddings = self.embedding_model.encode(batch, show_progress_bar=False)
-            embeddings.extend(batch_embeddings.tolist())
-            
-            if (i + batch_size) % 100 == 0:
-                print(f"  Generated embeddings for {min(i+batch_size, len(texts))}/{len(texts)} chunks")
-        
-        return embeddings
-    
-    def add_chunks(self, chunks: List[Dict]):
-        """
-        Add document chunks to vector store
-        
-        Args:
-            chunks: List of dicts with 'content' and 'metadata'
-        """
-        print(f"\nAdding {len(chunks)} chunks to vector store...")
-        
-        # Prepare data
-        ids = [chunk['metadata']['chunk_id'] for chunk in chunks]
-        documents = [chunk['content'] for chunk in chunks]
-        metadatas = [chunk['metadata'] for chunk in chunks]
-        
-        # Generate embeddings
-        print("Generating embeddings...")
-        embeddings = self.generate_embeddings(documents)
-        
-        # Add to ChromaDB in batches
-        batch_size = 100
-        for i in range(0, len(chunks), batch_size):
-            self.collection.add(
-                ids=ids[i:i+batch_size],
-                embeddings=embeddings[i:i+batch_size],
-                documents=documents[i:i+batch_size],
-                metadatas=metadatas[i:i+batch_size]
+    """Qdrant-backed hybrid retrieval with dense + sparse + rerank + RBAC."""
+
+    def __init__(self, settings: Settings, qdrant_url: str = ":memory:"):
+        from fastembed import SparseTextEmbedding
+        from qdrant_client import QdrantClient
+        from sentence_transformers import CrossEncoder, SentenceTransformer
+
+        self._settings = settings
+        self._client = QdrantClient(qdrant_url)
+        self._dense = SentenceTransformer(settings.dense_model)
+        self._sparse = SparseTextEmbedding(settings.sparse_model)
+        self._reranker = CrossEncoder(settings.reranker_model)
+        self._ensure_collection()
+
+    def _ensure_collection(self) -> None:
+        from qdrant_client.models import Distance, SparseVectorParams, VectorParams
+
+        existing = [c.name for c in self._client.get_collections().collections]
+        if self._settings.collection_name not in existing:
+            self._client.create_collection(
+                collection_name=self._settings.collection_name,
+                vectors_config={
+                    "dense": VectorParams(
+                        size=self._settings.embedding_dim,
+                        distance=Distance.COSINE,
+                    )
+                },
+                sparse_vectors_config={
+                    "sparse": SparseVectorParams(),
+                },
             )
-            print(f"  Added batch {i//batch_size + 1}/{(len(chunks)-1)//batch_size + 1}")
-        
-        print(f"✅ Successfully added {len(chunks)} chunks to vector store")
-    
-    def query(self, query_text: str, n_results=5) -> Dict:
-        """
-        Query the vector store
-        
-        Args:
-            query_text: Question to search for
-            n_results: Number of results to return
-        
-        Returns:
-            Dict with documents, metadatas, distances
-        """
-        # Generate embedding for query
-        query_embedding = self.embedding_model.encode([query_text])[0].tolist()
-        
-        # Query ChromaDB
-        results = self.collection.query(
-            query_embeddings=[query_embedding],
-            n_results=n_results
+
+    def upsert(self, chunks: List[Dict]) -> None:
+        from qdrant_client.models import PointStruct, SparseVector
+
+        texts = [c["content"] for c in chunks]
+        dense_vecs = self._dense.encode(texts, show_progress_bar=False).tolist()
+        sparse_vecs = list(self._sparse.embed(texts))
+
+        points = []
+        for i, chunk in enumerate(chunks):
+            sv = sparse_vecs[i]
+            points.append(
+                PointStruct(
+                    id=i,
+                    vector={
+                        "dense": dense_vecs[i],
+                        "sparse": SparseVector(
+                            indices=sv.indices.tolist(),
+                            values=sv.values.tolist(),
+                        ),
+                    },
+                    payload={
+                        "chunk_id": chunk.get("chunk_id", str(i)),
+                        "source_file": chunk.get("source_file", ""),
+                        "content": chunk["content"],
+                        "allowed_roles": chunk.get("allowed_roles", ["admin", "manager", "staff"]),
+                    },
+                )
+            )
+
+        self._client.upsert(
+            collection_name=self._settings.collection_name,
+            points=points,
         )
-        
-        return results
-    
-    def get_stats(self) -> Dict:
-        """Get statistics about the vector store"""
-        count = self.collection.count()
-        return {
-            'total_chunks': count,
-            'collection_name': self.collection_name,
-            'persist_directory': self.persist_directory
-        }
 
-
-def main():
-    """Initialize vector store with chunks"""
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # Load chunks
-    chunks_file = os.path.join(script_dir, '../data/processed/chunks.json')
-    print(f"Loading chunks from {chunks_file}...")
-    
-    with open(chunks_file, 'r', encoding='utf-8') as f:
-        chunks = json.load(f)
-    
-    print(f"Loaded {len(chunks)} chunks")
-    
-    # Initialize vector store
-    persist_dir = os.path.join(script_dir, '../chroma_db')
-    vector_store = VectorStore(persist_directory=persist_dir)
-    
-    # Check if already populated
-    stats = vector_store.get_stats()
-    if stats['total_chunks'] > 0:
-        print(f"\n⚠️  Vector store already contains {stats['total_chunks']} chunks")
-        response = input("Do you want to replace it? (yes/no): ")
-        if response.lower() != 'yes':
-            print("Skipping vector store creation")
-            return
-        
-        # Delete and recreate collection
-        vector_store.client.delete_collection(vector_store.collection_name)
-        vector_store.collection = vector_store.client.create_collection(
-            name=vector_store.collection_name,
-            metadata={"description": "Medical compliance documents for RAG"}
+    def query(self, text: str, role: str, settings: Settings) -> List[Dict]:
+        from qdrant_client.models import (
+            FieldCondition,
+            Filter,
+            MatchAny,
+            NamedSparseVector,
+            NamedVector,
         )
-    
-    # Add chunks to vector store
-    start_time = time.time()
-    vector_store.add_chunks(chunks)
-    elapsed = time.time() - start_time
-    
-    # Print final stats
-    stats = vector_store.get_stats()
-    print(f"\n{'='*60}")
-    print("VECTOR STORE CREATED")
-    print(f"{'='*60}")
-    print(f"Total chunks indexed: {stats['total_chunks']}")
-    print(f"Time taken: {elapsed:.2f} seconds")
-    print(f"Database location: {stats['persist_directory']}")
-    
-    # Test query
-    print(f"\n{'='*60}")
-    print("TESTING RETRIEVAL")
-    print(f"{'='*60}")
-    test_query = "What should I do after a needlestick injury?"
-    print(f"Query: {test_query}")
-    
-    results = vector_store.query(test_query, n_results=3)
-    
-    print("\nTop 3 results:")
-    for i, doc in enumerate(results['documents'][0]):
-        print(f"\n[{i+1}] Source: {results['metadatas'][0][i]['source_file']}")
-        print(f"    Preview: {doc[:150]}...")
 
+        rbac_filter = Filter(
+            must=[
+                FieldCondition(
+                    key="allowed_roles",
+                    match=MatchAny(any=[role]),
+                )
+            ]
+        )
 
-if __name__ == '__main__':
-    main()
+        dense_vec = self._dense.encode([text], show_progress_bar=False)[0].tolist()
+        sparse_vec_list = list(self._sparse.embed([text]))
+        sv = sparse_vec_list[0]
+
+        from qdrant_client.models import SparseVector
+
+        dense_hits = self._client.search(
+            collection_name=settings.collection_name,
+            query_vector=NamedVector(name="dense", vector=dense_vec),
+            query_filter=rbac_filter,
+            limit=settings.top_k_retrieve,
+            with_payload=True,
+        )
+
+        sparse_hits = self._client.search(
+            collection_name=settings.collection_name,
+            query_vector=NamedSparseVector(
+                name="sparse",
+                vector=SparseVector(
+                    indices=sv.indices.tolist(),
+                    values=sv.values.tolist(),
+                ),
+            ),
+            query_filter=rbac_filter,
+            limit=settings.top_k_retrieve,
+            with_payload=True,
+        )
+
+        def _to_hit(r) -> Dict:
+            p = r.payload or {}
+            return {
+                "id": str(r.id),
+                "chunk_id": p.get("chunk_id", str(r.id)),
+                "source_file": p.get("source_file", ""),
+                "content": p.get("content", ""),
+                "allowed_roles": p.get("allowed_roles", []),
+            }
+
+        merged = _rrf_merge(
+            [_to_hit(r) for r in dense_hits],
+            [_to_hit(r) for r in sparse_hits],
+            k=settings.rrf_k,
+        )
+
+        candidates = merged[: settings.top_k_retrieve]
+        if not candidates:
+            return []
+
+        pairs = [[text, c["content"]] for c in candidates]
+        scores = self._reranker.predict(pairs)
+        ranked = sorted(
+            zip(scores, candidates),
+            key=lambda x: x[0],
+            reverse=True,
+        )
+        return [c for _, c in ranked[: settings.top_k_final]]
