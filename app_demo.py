@@ -1,15 +1,8 @@
 # app_demo.py - Streamlit Cloud compatible version with cached responses
-import streamlit as st
-import sys
-import os
-import json
 
-# Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
-import plotly.graph_objects as go
 import plotly.express as px
-from datetime import datetime
+import plotly.graph_objects as go
+import streamlit as st
 
 # Page config
 st.set_page_config(

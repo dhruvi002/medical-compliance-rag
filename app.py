@@ -1,19 +1,15 @@
 # app.py
-import streamlit as st
-import sys
 import os
-
-# Add src to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'src'))
-
-from vector_store import VectorStore
-from rag_system import RAGSystem
-from access_control import AccessControlSystem
-from compliance_dashboard import ComplianceDashboard
-import plotly.graph_objects as go
-import plotly.express as px
 from datetime import datetime
-import json
+
+import plotly.express as px
+import plotly.graph_objects as go
+import streamlit as st
+
+from medcomply.access_control import AccessControlSystem
+from medcomply.compliance_dashboard import ComplianceDashboard
+from medcomply.rag_system import RAGSystem
+from medcomply.vector_store import VectorStore
 
 # Page config
 st.set_page_config(
@@ -79,7 +75,7 @@ def load_access_control():
     """Load access control system (cached)"""
     try:
         return AccessControlSystem()
-    except:
+    except Exception:
         return None
 
 def main():
