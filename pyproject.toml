@@ -22,6 +22,9 @@ dependencies = [
     "llama-index-core>=0.10",
     "streamlit-authenticator>=0.3",
     "groq>=0.9",
+    "ragas>=0.2",
+    "langchain-groq>=0.2",
+    "scikit-learn>=1.4",
 ]
 
 [project.optional-dependencies]
@@ -45,6 +48,7 @@ ignore = ["E501"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["slow: requires model download"]
 
 [tool.coverage.run]
 omit = [
@@ -57,5 +61,4 @@ omit = [
     "*/medcomply/evaluate.py",
     "*/medcomply/interactive.py",
     "*/medcomply/personalized_learning.py",
-    "*/medcomply/skill_gap_analyzer.py",
 ]

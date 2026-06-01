@@ -19,8 +19,8 @@ A Retrieval-Augmented Generation system for answering healthcare compliance ques
 | Orchestration (LlamaIndex) | Not present |
 | Auth (`streamlit-authenticator`) | Not present — simulated user list |
 | Audit logging (SQLite + UUID) | Partial — flat-file JSON, no UUID constraint |
-| Evaluation (RAGAS + retrieval metrics) | Not present — throughput timing only |
-| Skill-gap NLP (embeddings + clustering) | Not present — keyword matching only |
+| Evaluation (RAGAS + retrieval metrics) | Implemented — Hit Rate / MRR / nDCG + RAGAS generation metrics |
+| Skill-gap analysis | Implemented — semantic similarity scoring (cosine distance over `bge-base-en-v1.5` embeddings) with KMeans cohort theme detection |
 | Local LLM (Ollama) | Implemented |
 | Streamlit frontend | Implemented |
 

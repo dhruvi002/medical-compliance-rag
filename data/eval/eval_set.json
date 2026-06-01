@@ -1,0 +1,576 @@
+{
+  "_labeling_notes": "Ground-truth pairs derived from synthetic compliance documents in data/processed/. Each synthetic file (synthetic_hipaa.json etc.) consists of 10 Q-A pairs; each answer was treated as one document chunk during ingestion. relevant_chunk_ids were assigned by directly inspecting which chunk(s) contain the canonical answer for each query. Cross-domain edge-case queries reference chunks from multiple source domains. Chunk IDs follow the pattern {domain}_{index:03d} matching the chunk_id assigned by scripts/run_eval.py during ingestion.",
+  "entries": [
+    {
+      "query_id": "q001",
+      "query": "I emailed a patient summary to the wrong external provider by mistake. What should I do immediately?",
+      "relevant_chunk_ids": [
+        "hipaa_000",
+        "hipaa_001"
+      ],
+      "reference_answer": "This is a potential HIPAA breach under 45 CFR §164.402 because PHI was disclosed to an unauthorized recipient. Immediately notify your supervisor and your organization’s Privacy Officer. Do not attempt to recall or delete the email unless instructed. The Privacy Officer will perform a breach risk assessment considering the nature of the PHI, the recipient, whether the data was viewed, and mitigation steps taken. Timely internal reporting is critical so the organization can meet breach notification timelines if required.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q002",
+      "query": "How do I know if an incident qualifies as a reportable HIPAA breach?",
+      "relevant_chunk_ids": [
+        "hipaa_001"
+      ],
+      "reference_answer": "Under HIPAA (45 CFR §164.402), a breach is generally any impermissible use or disclosure of unsecured PHI unless a documented risk assessment demonstrates a low probability that the PHI was compromised. The assessment must evaluate: (1) the type and sensitivity of PHI involved, (2) who received it, (3) whether it was actually acquired or viewed, and (4) the extent of mitigation. Only the Privacy Officer or compliance team should make the final determination.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q003",
+      "query": "I need to share patient information with another department—how much information can I include?",
+      "relevant_chunk_ids": [
+        "hipaa_002"
+      ],
+      "reference_answer": "HIPAA’s minimum necessary standard (45 CFR §164.502(b)) requires you to limit shared PHI to only what is needed to perform the intended job function. Do not include full medical records if a summary or specific data points will suffice. Follow your organization’s role-based access and data-sharing policies, and when in doubt, consult your supervisor or Privacy Officer before sharing.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q004",
+      "query": "Does the minimum necessary rule apply when a provider is treating a patient?",
+      "relevant_chunk_ids": [
+        "hipaa_003",
+        "hipaa_002"
+      ],
+      "reference_answer": "No. HIPAA specifically exempts disclosures for treatment purposes from the minimum necessary requirement (45 CFR §164.502(b)(2)). However, providers should still use professional judgment and avoid unnecessary access. For non-treatment purposes such as billing, operations, or quality review, the minimum necessary standard does apply.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q005",
+      "query": "What is a Business Associate Agreement (BAA), and when is it required?",
+      "relevant_chunk_ids": [
+        "hipaa_004"
+      ],
+      "reference_answer": "A Business Associate Agreement is a HIPAA-required contract (45 CFR §164.502(e) and §164.504(e)) between a covered entity and a vendor that creates, receives, maintains, or transmits PHI on its behalf. A BAA must be in place before sharing PHI and must define permitted uses, safeguards, breach reporting obligations, and termination conditions. Examples include cloud storage providers, billing companies, and analytics vendors.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q006",
+      "query": "Can we share patient data with a vendor if they say they’re HIPAA-compliant but no BAA is signed yet?",
+      "relevant_chunk_ids": [
+        "hipaa_005",
+        "hipaa_004"
+      ],
+      "reference_answer": "No. HIPAA requires a fully executed Business Associate Agreement before any PHI is shared with a business associate (45 CFR §164.502(e)). Verbal assurances or marketing claims of compliance are not sufficient. Sharing PHI without a BAA is a compliance violation and may constitute a reportable breach.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q007",
+      "query": "A patient asked for a copy of their medical record. How long do we have to respond?",
+      "relevant_chunk_ids": [
+        "hipaa_006"
+      ],
+      "reference_answer": "Under the HIPAA Right of Access (45 CFR §164.524), covered entities must provide access to requested records within 30 days of the request. A one-time 30-day extension is permitted if documented and communicated to the patient in writing. Records must be provided in the form and format requested when readily producible, including electronic formats.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q008",
+      "query": "What should we do if a patient says there is incorrect information in their medical record?",
+      "relevant_chunk_ids": [
+        "hipaa_007"
+      ],
+      "reference_answer": "HIPAA grants patients the right to request an amendment to their records (45 CFR §164.526). The request must be reviewed, and a decision made within 60 days, with one possible 30-day extension. If approved, the amendment must be appended to the record. If denied, the patient must receive a written explanation and be allowed to submit a statement of disagreement.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q009",
+      "query": "If a breach affects more than 500 patients, what additional steps are required?",
+      "relevant_chunk_ids": [
+        "hipaa_008",
+        "hipaa_001"
+      ],
+      "reference_answer": "For breaches involving more than 500 individuals, HIPAA requires notification to affected individuals, the U.S. Department of Health and Human Services (HHS), and prominent media outlets serving the affected area (45 CFR §164.406). Notifications must occur without unreasonable delay and no later than 60 days from discovery. Smaller breaches are reported to HHS annually.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q010",
+      "query": "Who is responsible for notifying patients after a HIPAA breach?",
+      "relevant_chunk_ids": [
+        "hipaa_009",
+        "hipaa_001"
+      ],
+      "reference_answer": "The covered entity is ultimately responsible for breach notification under HIPAA (45 CFR §164.404), even if the breach occurred at a business associate. Business associates must notify the covered entity according to the BAA, but the covered entity handles patient and HHS notifications unless the agreement explicitly assigns those duties.",
+      "domain": "hipaa"
+    },
+    {
+      "query_id": "q011",
+      "query": "I accidentally stuck myself with a used needle after giving an injection. What should I do first?",
+      "relevant_chunk_ids": [
+        "osha_000"
+      ],
+      "reference_answer": "Under OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030), immediately wash the affected area with soap and water. Do not squeeze or scrub the wound. Report the incident right away to your supervisor and occupational health department so the exposure can be documented and evaluated. Prompt reporting ensures timely post-exposure evaluation, testing, and prophylaxis if needed.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q012",
+      "query": "Is it necessary to report a needlestick injury if the needle was unused and sterile?",
+      "relevant_chunk_ids": [
+        "osha_001",
+        "osha_000"
+      ],
+      "reference_answer": "Yes. OSHA requires that all sharps injuries be reported and documented according to your facility’s exposure control plan (29 CFR 1910.1030). Even if the needle was unused, reporting allows the organization to track injury trends, evaluate safety devices, and comply with OSHA recordkeeping requirements.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q013",
+      "query": "I was splashed with a chemical disinfectant while cleaning a room. Where can I find information on its hazards?",
+      "relevant_chunk_ids": [
+        "osha_002"
+      ],
+      "reference_answer": "Per OSHA’s Hazard Communication Standard (29 CFR 1910.1200), you should consult the Safety Data Sheet (SDS) for the chemical. SDSs provide information on health hazards, required PPE, first-aid measures, and spill response. SDSs must be readily accessible to all employees, either electronically or in a designated physical location.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q014",
+      "query": "What should I do if I experience dizziness or breathing trouble after being exposed to a chemical at work?",
+      "relevant_chunk_ids": [
+        "osha_003",
+        "osha_002"
+      ],
+      "reference_answer": "Immediately stop work, move to a safe area with fresh air, and notify your supervisor. Seek medical evaluation as required. Under OSHA 29 CFR 1910.1200 and applicable emergency action plan requirements (29 CFR 1910.38), exposures with symptoms must be reported and investigated. Do not resume work until cleared and corrective actions are taken.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q015",
+      "query": "When is a respirator required instead of a standard surgical mask?",
+      "relevant_chunk_ids": [
+        "osha_004"
+      ],
+      "reference_answer": "Respirators, such as N95s, are required when employees may be exposed to airborne hazards and engineering or administrative controls are insufficient, per OSHA’s Respiratory Protection Standard (29 CFR 1910.134). Examples include care of patients with airborne infectious diseases or exposure to hazardous dusts or fumes. Use of respirators requires medical clearance, fit testing, and training.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q016",
+      "query": "Can I use my own N95 respirator if one is more comfortable?",
+      "relevant_chunk_ids": [
+        "osha_005",
+        "osha_004"
+      ],
+      "reference_answer": "No. OSHA 29 CFR 1910.134 requires that respirators be provided by the employer and used as part of a formal respiratory protection program. Using personal respirators outside the program may lead to improper fit, lack of medical clearance, and noncompliance. Always use employer-approved and fit-tested equipment.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q017",
+      "query": "What information should I know from my workplace Emergency Action Plan?",
+      "relevant_chunk_ids": [
+        "osha_006"
+      ],
+      "reference_answer": "OSHA’s Emergency Action Plan standard (29 CFR 1910.38) requires employees to know evacuation routes, exit locations, alarm systems, reporting procedures for emergencies, and who is responsible for coordinating response. You should also know where to assemble after evacuation and how to account for coworkers.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q018",
+      "query": "If there is a fire or chemical spill, should I try to clean it up myself?",
+      "relevant_chunk_ids": [
+        "osha_007",
+        "osha_006"
+      ],
+      "reference_answer": "No, unless you are trained and authorized. Per OSHA 29 CFR 1910.38, employees should follow the Emergency Action Plan, evacuate if instructed, and notify designated response personnel. Attempting cleanup without training or PPE can increase risk and violate safety procedures.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q019",
+      "query": "How soon do I need to report a workplace injury or exposure?",
+      "relevant_chunk_ids": [
+        "osha_008"
+      ],
+      "reference_answer": "Workplace injuries and exposures should be reported immediately or as soon as possible according to your facility’s policy. OSHA requires timely reporting to ensure proper documentation, medical evaluation, and hazard correction. Delayed reporting can affect treatment options and compliance with OSHA recordkeeping requirements (29 CFR Part 1904).",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q020",
+      "query": "What happens after I report a safety incident at work?",
+      "relevant_chunk_ids": [
+        "osha_009",
+        "osha_008"
+      ],
+      "reference_answer": "After reporting, the incident is documented and evaluated under OSHA requirements. The employer investigates root causes, provides medical follow-up if needed, and implements corrective actions to prevent recurrence. OSHA prohibits retaliation for reporting workplace injuries or safety concerns, ensuring employees can report incidents without fear.",
+      "domain": "osha"
+    },
+    {
+      "query_id": "q021",
+      "query": "What are the WHO ‘5 Moments for Hand Hygiene,’ and when do they apply during patient care?",
+      "relevant_chunk_ids": [
+        "infection_control_000"
+      ],
+      "reference_answer": "The WHO 5 Moments for Hand Hygiene are: (1) before touching a patient, (2) before clean or aseptic procedures, (3) after body fluid exposure risk, (4) after touching a patient, and (5) after touching patient surroundings. These moments apply in all care settings and are designed to prevent transmission of pathogens between patients, staff, and the environment. Hand hygiene should be performed using alcohol-based hand rub when hands are not visibly soiled, or soap and water when they are visibly dirty or when caring for patients with certain infections such as C. difficile.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q022",
+      "query": "If I only touched the patient’s bed rail and not the patient, do I still need to clean my hands?",
+      "relevant_chunk_ids": [
+        "infection_control_001",
+        "infection_control_000"
+      ],
+      "reference_answer": "Yes. Under the WHO 5 Moments, touching patient surroundings counts as a hand hygiene opportunity (Moment 5). Bed rails, call buttons, and other high-touch surfaces can be contaminated. You must perform hand hygiene after touching these surfaces to prevent cross-contamination, even if you did not have direct contact with the patient.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q023",
+      "query": "What is the difference between standard precautions and contact precautions?",
+      "relevant_chunk_ids": [
+        "infection_control_002"
+      ],
+      "reference_answer": "Standard precautions apply to all patients and include hand hygiene, appropriate PPE based on exposure risk, respiratory hygiene, and safe injection practices. Contact precautions are used in addition to standard precautions for patients with infections spread by direct or indirect contact, such as MRSA or C. difficile. Contact precautions typically require gown and gloves upon room entry and dedicated or disinfected equipment.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q024",
+      "query": "When are droplet precautions required, and what PPE should be used?",
+      "relevant_chunk_ids": [
+        "infection_control_003"
+      ],
+      "reference_answer": "Droplet precautions are used for infections transmitted via large respiratory droplets, such as influenza. In addition to standard precautions, a surgical mask is required when entering the patient’s room or when within the specified distance per facility policy. Eye protection may be required if splashes or sprays are anticipated. Patients should wear a mask when being transported outside the room.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q025",
+      "query": "What situations require airborne precautions, and how do they differ from droplet precautions?",
+      "relevant_chunk_ids": [
+        "infection_control_004",
+        "infection_control_003"
+      ],
+      "reference_answer": "Airborne precautions are required for diseases transmitted via small airborne particles, such as tuberculosis or measles. These precautions require placement of the patient in an airborne infection isolation room (AIIR) and use of a fit-tested N95 respirator or higher-level protection. Unlike droplet precautions, standard surgical masks do not provide adequate protection for airborne pathogens.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q026",
+      "query": "What is the difference between disinfection and sterilization?",
+      "relevant_chunk_ids": [
+        "infection_control_005"
+      ],
+      "reference_answer": "Disinfection eliminates many or all pathogenic microorganisms on inanimate objects, except bacterial spores, and is commonly used for non-critical equipment. Sterilization destroys all forms of microbial life, including spores, and is required for critical items that enter sterile tissue or the bloodstream. The level of processing must match the intended use of the equipment per CDC and facility guidelines.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q027",
+      "query": "How often should patient rooms and high-touch surfaces be cleaned?",
+      "relevant_chunk_ids": [
+        "infection_control_006"
+      ],
+      "reference_answer": "Patient rooms should be cleaned routinely, with high-touch surfaces such as bed rails, doorknobs, light switches, and call buttons cleaned and disinfected at least daily or more frequently if visibly soiled. Enhanced cleaning may be required for patients on isolation precautions. Follow facility environmental services protocols and approved disinfectants to ensure effective infection control.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q028",
+      "query": "If a room looks clean, do we still need to disinfect surfaces?",
+      "relevant_chunk_ids": [
+        "infection_control_007",
+        "infection_control_006"
+      ],
+      "reference_answer": "Yes. Many pathogens are not visible to the naked eye. Disinfection of surfaces must follow scheduled protocols regardless of visible cleanliness. Visual inspection alone is not sufficient to ensure safety; adherence to environmental cleaning standards is necessary to reduce infection risk.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q029",
+      "query": "What is the correct order for donning PPE before entering an isolation room?",
+      "relevant_chunk_ids": [
+        "infection_control_008"
+      ],
+      "reference_answer": "The typical PPE donning sequence is: (1) hand hygiene, (2) gown, (3) mask or respirator, (4) goggles or face shield, and (5) gloves. Follow your facility’s specific protocol, as sequences may vary slightly based on the type of isolation precautions and PPE used.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q030",
+      "query": "What is the safest sequence for doffing PPE to avoid self-contamination?",
+      "relevant_chunk_ids": [
+        "infection_control_009"
+      ],
+      "reference_answer": "PPE should be removed in a manner that minimizes contamination: commonly gloves first, then gown, followed by hand hygiene; eye protection and mask or respirator are removed last, followed by hand hygiene again. Removal should occur at the designated location per facility policy. Proper doffing is critical to preventing self-contamination and healthcare-associated infections.",
+      "domain": "infection_control"
+    },
+    {
+      "query_id": "q031",
+      "query": "Where should I dispose of a used needle after giving an injection?",
+      "relevant_chunk_ids": [
+        "medical_waste_000"
+      ],
+      "reference_answer": "Used needles must be disposed of immediately in an approved sharps container that is puncture-resistant, leak-proof, and labeled with the biohazard symbol, per OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030). Do not recap, bend, or remove the needle by hand. Proper sharps disposal reduces the risk of needlestick injuries and regulatory violations.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q032",
+      "query": "What should I do if a sharps container is almost full?",
+      "relevant_chunk_ids": [
+        "medical_waste_001",
+        "medical_waste_000"
+      ],
+      "reference_answer": "Sharps containers should be replaced according to facility policy and before they reach the fill line, typically around three-quarters full. Overfilling increases the risk of needlestick injuries and violates OSHA requirements (29 CFR 1910.1030). Close and secure the container properly and notify environmental services or follow internal procedures for replacement.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q033",
+      "query": "How do I know whether waste goes into a red biohazard bag or regular trash?",
+      "relevant_chunk_ids": [
+        "medical_waste_002"
+      ],
+      "reference_answer": "Waste contaminated with blood or other potentially infectious materials (OPIM) must be placed in a red biohazard bag or labeled container, per OSHA 29 CFR 1910.1030. Items such as blood-soaked gauze, saturated dressings, and certain PPE qualify. Items that are not visibly contaminated and do not contain OPIM may go into regular trash, following facility policy and state regulations.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q034",
+      "query": "Can gloves and gowns used for routine patient care be thrown in regular trash?",
+      "relevant_chunk_ids": [
+        "medical_waste_003",
+        "medical_waste_002"
+      ],
+      "reference_answer": "If gloves and gowns are not visibly contaminated with blood or OPIM and were used for routine, non-isolation care, they may be disposed of in regular trash per facility policy. However, PPE used during procedures involving blood or patients on certain isolation precautions should be disposed of as regulated medical waste. Always follow your organization’s waste segregation guidelines.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q035",
+      "query": "How should I dispose of blood-soaked gauze after a procedure?",
+      "relevant_chunk_ids": [
+        "medical_waste_004",
+        "medical_waste_002"
+      ],
+      "reference_answer": "Blood-soaked or saturated gauze is considered regulated medical waste and must be disposed of in a red biohazard bag or designated biohazard container, per OSHA 29 CFR 1910.1030. Do not place it in regular trash. Proper segregation helps prevent exposure and ensures compliant handling and disposal.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q036",
+      "query": "What is the proper way to handle chemical waste in a healthcare setting?",
+      "relevant_chunk_ids": [
+        "medical_waste_005"
+      ],
+      "reference_answer": "Chemical waste must be handled according to OSHA’s Hazard Communication Standard (29 CFR 1910.1200) and applicable EPA and state regulations. Do not dispose of chemicals down the drain or in regular trash unless explicitly permitted. Refer to the Safety Data Sheet (SDS) for disposal instructions and follow your facility’s chemical waste management procedures.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q037",
+      "query": "Can expired or partially used medications be thrown in the regular trash?",
+      "relevant_chunk_ids": [
+        "medical_waste_006"
+      ],
+      "reference_answer": "No. Pharmaceutical waste must be disposed of according to facility policy and applicable regulations, such as EPA and state guidelines. Many medications, especially hazardous drugs, require disposal in designated pharmaceutical waste containers. Improper disposal can pose environmental risks and lead to regulatory noncompliance.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q038",
+      "query": "How should I dispose of chemotherapy or other hazardous drug waste?",
+      "relevant_chunk_ids": [
+        "medical_waste_007"
+      ],
+      "reference_answer": "Chemotherapy and other hazardous drug waste must be disposed of in clearly labeled hazardous pharmaceutical waste containers, often color-coded per facility policy. Handling and disposal must comply with OSHA, EPA, and USP <800> standards. Never place hazardous drug waste in red biohazard bags or regular trash unless explicitly allowed by policy.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q039",
+      "query": "What should I do if biohazardous waste leaks or spills?",
+      "relevant_chunk_ids": [
+        "medical_waste_008",
+        "medical_waste_002"
+      ],
+      "reference_answer": "Immediately restrict access to the area and don appropriate PPE. Follow your facility’s spill response procedures, which typically include cleaning and disinfection with approved agents. Report the incident to your supervisor and environmental services. Proper response is required to maintain OSHA compliance and protect staff and patients.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q040",
+      "query": "Why is proper medical waste segregation so important?",
+      "relevant_chunk_ids": [
+        "medical_waste_009"
+      ],
+      "reference_answer": "Proper waste segregation reduces exposure risks, prevents injuries, and ensures compliance with OSHA, EPA, and state regulations. Mixing regulated medical waste with regular trash increases disposal costs and can lead to fines or safety incidents. Correct segregation protects staff, patients, and the environment while supporting regulatory compliance.",
+      "domain": "medical_waste"
+    },
+    {
+      "query_id": "q041",
+      "query": "How often am I required to complete mandatory safety and compliance training?",
+      "relevant_chunk_ids": [
+        "documentation_training_000"
+      ],
+      "reference_answer": "Most healthcare compliance training must be completed at hire and annually thereafter. For example, OSHA requires annual Bloodborne Pathogens training under 29 CFR 1910.1030, and HIPAA requires periodic workforce training per 45 CFR §164.530(b). Additional training may be required when job duties change or new risks, equipment, or regulations are introduced.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q042",
+      "query": "What documentation is required to prove that I completed mandatory training?",
+      "relevant_chunk_ids": [
+        "documentation_training_001"
+      ],
+      "reference_answer": "Training completion must be documented with records such as attendance logs, electronic learning management system (LMS) certificates, training dates, content covered, and instructor information when applicable. OSHA and accrediting bodies like The Joint Commission expect employers to maintain verifiable records demonstrating workforce compliance with required training.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q043",
+      "query": "How long must employee training records be retained?",
+      "relevant_chunk_ids": [
+        "documentation_training_002"
+      ],
+      "reference_answer": "Retention periods vary by regulation. OSHA requires training records related to exposure risks to be retained for at least three years, while employee medical and exposure records must be kept for the duration of employment plus 30 years (29 CFR 1910.1020). HIPAA-related training documentation should be retained for at least six years per 45 CFR §164.530(j). Always follow the longest applicable retention requirement.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q044",
+      "query": "What details must be included when documenting a workplace incident?",
+      "relevant_chunk_ids": [
+        "documentation_training_003"
+      ],
+      "reference_answer": "Incident documentation should include the date and time, location, individuals involved, a factual description of what occurred, immediate actions taken, injuries or exposures, and any follow-up care. OSHA recordkeeping standards (29 CFR Part 1904) require accurate and timely documentation to support investigation, trend analysis, and regulatory compliance.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q045",
+      "query": "If no one was injured, do I still need to document the incident?",
+      "relevant_chunk_ids": [
+        "documentation_training_004",
+        "documentation_training_003"
+      ],
+      "reference_answer": "Yes. Near-misses and non-injury incidents should still be documented per organizational policy. While not all events are OSHA-recordable, internal documentation supports risk management, corrective actions, and audit readiness. Accrediting bodies often review near-miss reporting as part of a strong safety culture.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q046",
+      "query": "What is an audit trail in a healthcare system, and why is it important?",
+      "relevant_chunk_ids": [
+        "documentation_training_005"
+      ],
+      "reference_answer": "An audit trail is an electronic record that tracks user access and actions within clinical or administrative systems, such as viewing or modifying patient records. Under HIPAA (45 CFR §164.312(b)), audit controls are required to monitor access to electronic PHI. Audit trails support investigations, detect inappropriate access, and demonstrate compliance during audits.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q047",
+      "query": "Who reviews audit trails, and what happens if inappropriate access is found?",
+      "relevant_chunk_ids": [
+        "documentation_training_006",
+        "documentation_training_005"
+      ],
+      "reference_answer": "Audit trails are typically reviewed by compliance, IT security, or privacy teams. If inappropriate access is identified, the organization conducts an investigation, documents findings, and takes corrective action, which may include retraining, disciplinary measures, or breach notification if required. Proper review and documentation are essential for HIPAA compliance.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q048",
+      "query": "What is a competency assessment, and when is it required?",
+      "relevant_chunk_ids": [
+        "documentation_training_007"
+      ],
+      "reference_answer": "A competency assessment evaluates an employee’s ability to safely and effectively perform job-related tasks. Competency assessments are commonly required at hire, annually, and when new equipment, procedures, or responsibilities are introduced. Accrediting bodies such as The Joint Commission expect documented evidence of staff competency for critical tasks.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q049",
+      "query": "How should competency assessments be documented?",
+      "relevant_chunk_ids": [
+        "documentation_training_008",
+        "documentation_training_007"
+      ],
+      "reference_answer": "Competency assessments should be documented with the employee’s name, assessed skill or task, assessment method (e.g., observation, simulation, test), date, outcome, and evaluator’s signature or credentials. Proper documentation supports regulatory compliance and demonstrates workforce readiness during audits or surveys.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q050",
+      "query": "What happens if I fail to complete required training or competency assessments on time?",
+      "relevant_chunk_ids": [
+        "documentation_training_009"
+      ],
+      "reference_answer": "Failure to complete required training or competency assessments may result in removal from certain duties, corrective action, or disciplinary measures per organizational policy. From a compliance perspective, incomplete training records can place the organization at risk during OSHA inspections, HIPAA audits, or accreditation surveys. Timely completion and documentation are essential for both patient safety and regulatory compliance.",
+      "domain": "documentation_training"
+    },
+    {
+      "query_id": "q051",
+      "query": "During a needlestick injury response, can I share the source patient’s lab results with the exposed employee?",
+      "relevant_chunk_ids": [
+        "edge_cases_000",
+        "osha_000",
+        "hipaa_002"
+      ],
+      "reference_answer": "This scenario involves both OSHA and HIPAA. Under OSHA’s Bloodborne Pathogens Standard (29 CFR 1910.1030), the exposed employee is entitled to a confidential medical evaluation and follow-up, which may include information about the exposure source when permitted. HIPAA (45 CFR §164.512(b)) allows disclosure of relevant PHI for workplace health and safety without patient authorization when required by law. Only the minimum necessary information should be shared through occupational health, not directly by clinical staff.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q052",
+      "query": "In an emergency, can I access a patient’s record even if I’m not assigned to their care?",
+      "relevant_chunk_ids": [
+        "edge_cases_001",
+        "hipaa_002"
+      ],
+      "reference_answer": "Yes, but only if it is necessary to prevent or lessen a serious and imminent threat to health or safety. HIPAA permits such access under emergency circumstances (45 CFR §164.512(j)). Access must be limited to what is necessary for the emergency, documented appropriately, and reviewed afterward. Routine curiosity or convenience does not qualify.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q053",
+      "query": "What should I do if following isolation precautions delays urgent life-saving care?",
+      "relevant_chunk_ids": [
+        "edge_cases_002",
+        "infection_control_002"
+      ],
+      "reference_answer": "In true emergencies, patient survival takes priority. Infection control guidance allows deviation from standard procedures when immediate action is required to save a life. However, staff should use the best available PPE as soon as feasible and document the circumstances. Post-event reporting and review are important to address exposure risks and compliance considerations.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q054",
+      "query": "If state privacy laws are stricter than HIPAA, which rules should we follow?",
+      "relevant_chunk_ids": [
+        "edge_cases_003"
+      ],
+      "reference_answer": "HIPAA establishes a federal floor, not a ceiling. When state laws provide greater privacy protections or patient rights, covered entities must comply with the stricter state requirements (45 CFR §160.203). Organizations should consult legal or compliance teams to ensure policies align with both federal and state regulations.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q055",
+      "query": "A patient refuses to wear a mask during transport despite being on droplet precautions. What should I do?",
+      "relevant_chunk_ids": [
+        "edge_cases_004",
+        "infection_control_003"
+      ],
+      "reference_answer": "This is a gray area balancing patient rights and infection control. Staff should educate the patient on the reason for masking and document refusal. If refusal continues, minimize exposure by limiting transport, maintaining distance, and ensuring staff use appropriate PPE. Document the incident per infection control and risk management policies.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q056",
+      "query": "Can workplace safety incident reports include patient identifiers?",
+      "relevant_chunk_ids": [
+        "edge_cases_005",
+        "hipaa_002",
+        "documentation_training_003"
+      ],
+      "reference_answer": "Incident reports should include only the minimum necessary patient information. OSHA documentation may require exposure details, but HIPAA’s minimum necessary standard (45 CFR §164.502(b)) still applies. Reports should be stored securely and accessed only by authorized personnel involved in safety and compliance functions.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q057",
+      "query": "If a power outage disables electronic access logs, how do we maintain HIPAA audit trail compliance?",
+      "relevant_chunk_ids": [
+        "edge_cases_006",
+        "documentation_training_005"
+      ],
+      "reference_answer": "HIPAA’s Security Rule (45 CFR §164.312(b)) requires audit controls, but it recognizes reasonable and appropriate safeguards. During downtime, organizations should implement contingency procedures such as manual access logs. Once systems are restored, records should be reconciled and retained according to policy.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q058",
+      "query": "Can I verbally disclose PHI to first responders during a workplace emergency?",
+      "relevant_chunk_ids": [
+        "edge_cases_007",
+        "hipaa_002"
+      ],
+      "reference_answer": "Yes. HIPAA permits disclosure of PHI to first responders for treatment or to prevent serious harm during emergencies (45 CFR §164.512(j)). Disclosures should be limited to what is necessary for response and safety. Documentation after the event is recommended for compliance review.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q059",
+      "query": "What if OSHA requires documentation that conflicts with a patient’s request to restrict information sharing?",
+      "relevant_chunk_ids": [
+        "edge_cases_008",
+        "documentation_training_003",
+        "hipaa_002"
+      ],
+      "reference_answer": "HIPAA allows disclosures required by law, including OSHA requirements, even if a patient has requested restrictions (45 CFR §164.522(a)(1)(i)). Staff should explain the legal obligation to the patient, limit disclosures to required elements, and document the rationale for compliance.",
+      "domain": "edge_cases"
+    },
+    {
+      "query_id": "q060",
+      "query": "How should we handle a compliance issue when guidance from accrediting bodies differs from internal policy?",
+      "relevant_chunk_ids": [
+        "edge_cases_009"
+      ],
+      "reference_answer": "When discrepancies arise, organizations should follow applicable laws and regulations first, then accrediting standards, and update internal policies accordingly. Staff should escalate the issue to compliance leadership. Documenting the decision-making process is critical to demonstrate good-faith compliance during audits or investigations.",
+      "domain": "edge_cases"
+    }
+  ]
+}

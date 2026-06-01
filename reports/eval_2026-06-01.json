@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-01",
+  "retrieval": {
+    "hit_rate@5": 0.7333,
+    "mrr@5": 0.6083,
+    "ndcg@5": 0.6612,
+    "hit_rate@10": 0.8167,
+    "mrr@10": 0.6394,
+    "ndcg@10": 0.7031,
+    "n_queries": 60
+  },
+  "generation": {
+    "faithfulness": 0.8124,
+    "answer_relevancy": 0.7643,
+    "context_precision": 0.6912,
+    "context_recall": 0.7388,
+    "n_queries": 60
+  }
+}
