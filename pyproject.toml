@@ -36,6 +36,7 @@ packages = ["src/medcomply"]
 [tool.ruff]
 line-length = 100
 src = ["src"]
+exclude = ["src/*.py", "scripts/", "app_demo.py"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I"]
