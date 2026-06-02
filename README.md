@@ -12,6 +12,7 @@ A Retrieval-Augmented Generation system for answering healthcare compliance ques
 | Dependency management (`uv` + `pyproject.toml`) | Implemented |
 | Linting (`ruff`) | Implemented |
 | Test suite (`pytest`) | Implemented |
+| CI eval gate (`eval.yml`, weekly schedule, retrieval + generation thresholds) | Implemented |
 | Vector store (Qdrant, hybrid dense + sparse + rerank + RBAC) | Implemented |
 | Dense embeddings (`BAAI/bge-base-en-v1.5`) | Implemented |
 | Sparse retrieval / hybrid search (SPLADE via `fastembed`) | Implemented |
@@ -124,8 +125,8 @@ uv run ruff check
 # Tests
 uv run pytest
 
-# Tests with coverage
-uv run pytest --cov=medcomply
+# Tests with coverage (≥ 90% enforced in CI)
+uv run pytest --cov=medcomply --cov-fail-under=90
 ```
 
 ---
