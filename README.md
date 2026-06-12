@@ -1,108 +1,88 @@
 # Medical Compliance RAG System
 
-A question-answering system for healthcare compliance, built with Retrieval-Augmented Generation (RAG). Staff ask plain-English questions about HIPAA, OSHA, infection control, and medical waste policy — the system retrieves the relevant policy excerpts and generates a grounded answer, citing its sources. Every query is logged, access is role-controlled, and answers are evaluated for factual faithfulness against the source documents.
+A retrieval-augmented generation (RAG) system that answers healthcare-compliance
+questions from authoritative sources (OSHA, HIPAA, CDC), with role-based access
+control, an append-only audit trail, and an NLP-driven workforce skill-gap analysis
+layer. Built to run entirely on free / open-source infrastructure.
 
-> **Portfolio / educational project. Not a clinical tool. Not HIPAA-compliant. Do not use with real patient data.**
+> **Status:** Core system complete — retrieval, RBAC, audit, evaluation, and
+> skill-gap analysis are fully implemented and tested. Hosted Streamlit Cloud
+> deployment is a work in progress; the app runs locally today
+> ([see Getting started](#getting-started)). 🔗 *Live demo link coming soon.*
 
----
-
-## What problem does it solve?
-
-Healthcare organisations navigate overlapping compliance regimes — HIPAA privacy rules, OSHA bloodborne pathogen standards, infection control protocols, medical waste regulations. Staff with questions typically search lengthy PDF documents or wait for a compliance officer. This system lets any authenticated staff member ask questions in plain English and get answers drawn directly from the policy corpus, with source citations attached so the answer can be verified.
-
-The project demonstrates a production-quality RAG pipeline: hybrid retrieval with role-based access control, a cross-encoder reranker, LLM-generated answers, a full evaluation harness, and an automated CI pipeline — all deployed on free infrastructure.
-
----
-
-## Live application
-
-Deployed on Streamlit Cloud (Qdrant Cloud + Groq inference). Authenticate with the demo credentials in the sidebar to try it.
-
-**Roles:**
-| Role | Access |
-|---|---|
-| `admin` | All policy domains |
-| `manager` | HIPAA, OSHA, infection control |
-| `staff` | Infection control and general guidance only |
-
-The same question asked by a `staff` user and an `admin` user will return different chunks, because RBAC filtering happens inside the vector database before results are returned to the application.
+> **Disclaimer:** This is a portfolio and educational project. It is **not**
+> HIPAA-compliant and is **not** suitable for real PHI.
 
 ---
 
-## How it works
+## What it does
 
-### The retrieval-augmented generation loop
+- **Answers compliance questions** grounded in source documents, with numbered
+  citations and a strict "answer only from context" prompt to suppress hallucination.
+- **Enforces role-based access** at the vector-store level — a `staff` user cannot
+  retrieve `admin`-only material, even by querying the index directly.
+- **Logs every query** (user, role, query, answer snippet, source chunks, latency)
+  to an append-only audit store.
+- **Analyzes workforce skill gaps** by scoring ~100 synthetic employee profiles
+  against compliance categories and surfacing organizational training priorities.
+- **Exposes an executive dashboard** (Streamlit + Plotly) for system-health and
+  skill-gap oversight.
 
-A user submits a question. The system doesn't search by keyword — it understands the *meaning* of the question and finds the most relevant policy passages. It then hands those passages to a language model, which writes a concise answer in plain English. The answer is grounded strictly in retrieved text; the model is instructed not to add information from outside the documents.
+---
+
+## Architecture
 
 ```
-User question
-      │
-      ▼
-VectorStore.query()
-      ├── Dense search (semantic)   ─┐
-      │   bge-base-en-v1.5           ├── RBAC filter applied inside Qdrant
-      └── Sparse search (lexical)  ─┘   (staff cannot retrieve admin-only chunks)
-            SPLADE
-      │
-      ▼
-Reciprocal Rank Fusion   (merges the two ranked lists)
-      │
-      ▼
-Cross-encoder reranker   (bge-reranker-v2-m3, top-50 → top-5)
-      │
-      ▼
-RAGSystem._build_prompt()   ("Answer ONLY from the context below…")
-      │
-      ▼
-LLM (Groq / Ollama)
-      │
-      ▼
-AuditLogger   (SQLite: user_id, role, query, answer, sources, latency)
-      │
-      ▼
-Answer + cited sources  →  Streamlit UI
+Ingest (offline)
+  data/processed/*.json
+    └─ TokenChunker (500-token chunks, 50-token overlap)
+         └─ VectorStore.upsert()
+              ├─ dense:  BAAI/bge-base-en-v1.5  → 768-dim cosine vectors
+              └─ sparse: SPLADE (Splade_PP_en_v1) → learned bag-of-tokens
+                   └─ Qdrant collection "medical_compliance"
+                        (payload: chunk_id, source_file, content, allowed_roles)
+
+Query (online)
+  User query (Streamlit, authenticated session)
+    └─ hybrid retrieval: dense top-50 + sparse top-50
+         ├─ RBAC payload filter applied server-side (role ∈ allowed_roles)
+         └─ Reciprocal Rank Fusion (k=60)
+              └─ cross-encoder rerank (bge-reranker-v2-m3) → top-5
+                   └─ prompt build → LLM (Groq hosted / Ollama local)
+                        └─ AuditLogger.log() → {answer, sources, latency_ms}
 ```
 
-### Why hybrid retrieval?
-
-Dense (semantic) search finds passages with similar *meaning* to the question. Sparse (lexical) search finds passages that contain the exact *words* in the question. Compliance work needs both: "what does OSHA 29 CFR 1910.1030 require?" is a semantic question about bloodborne pathogen standards, but the code `1910.1030` must match exactly. Using only dense search would miss exact regulatory citations; using only sparse search would miss paraphrased concepts. Reciprocal Rank Fusion combines both ranked lists without needing to tune interpolation weights.
-
-### Why a reranker on top of retrieval?
-
-The retrieval models (bi-encoders) encode the query and each document separately and compare their vector representations. This is fast but imprecise — the query has no visibility into the specific tokens in the document during encoding. The reranker (a cross-encoder) reads the query and each candidate passage *together* in a single forward pass, scoring the pair jointly. It is significantly more accurate but too slow to run on the full corpus. Running it on the top 50 candidates from hybrid retrieval gives cross-encoder quality at the 5 results that actually reach the user.
+A fuller write-up of the design decisions and threat model lives in
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md).
 
 ---
 
 ## Tech stack
 
-| Concern | Choice | Why |
+| Layer | Choice | Why |
 |---|---|---|
-| Vector database | Qdrant | Native hybrid search; RBAC filters applied server-side inside the index — a client cannot bypass them by querying the store directly |
-| Dense embeddings | `BAAI/bge-base-en-v1.5` (768-dim) | Competitive MTEB BEIR score at base size; runs on CPU in <100ms; 512-token context matches the 500-token chunk size |
-| Sparse retrieval | SPLADE via `fastembed` | Learned sparse vectors behave like a tuned BM25 — precise lexical recall for regulatory codes and section identifiers |
-| Reranker | `BAAI/bge-reranker-v2-m3` | Cross-encoder joint scoring; applied to top-50 → top-5 to keep latency manageable |
-| Fusion | Reciprocal Rank Fusion (RRF) | Combines dense and sparse ranked lists by reciprocal rank; no interpolation weights to tune |
-| Orchestration | Custom `RAGSystem` class | Four ordered steps (retrieve → rerank → prompt → generate); no framework dependency, fully auditable |
-| Local LLM | Ollama — Llama 3.1 8B | Runs in Docker; same open-weight model used in production via Groq |
-| Hosted LLM | Groq free tier | Streamlit Cloud has no GPU; Groq serves the same Llama 3.1 8B via OpenAI-compatible API — backend is swappable by changing one setting |
-| Auth | `streamlit-authenticator` (bcrypt) | Passwords are hashed; identity is bound to a verified session cookie, not a UI dropdown that could be spoofed |
-| Audit logging | SQLite + `uuid.uuid4()` | Stdlib, zero-config, transactional; UUID primary keys prevent collision; `AuditLogger` exposes no delete method — log is append-only |
-| Data models | `pydantic` v2 | Typed, validated settings and payloads |
-| Dependency management | `uv` + `pyproject.toml` + `uv.lock` | Reproducible installs; significantly faster than pip |
-| Linting | `ruff` | Replaces black + flake8 + isort in a single tool |
-| Testing | `pytest` + `pytest-cov` | 65 tests; 99% coverage; gate enforced in CI |
-| Deployment | Streamlit Cloud + Qdrant Cloud + Groq | All free tiers; no infrastructure to manage |
+| Vector store | **Qdrant** | Native server-side hybrid search + RBAC payload filters inside the index |
+| Dense embeddings | `BAAI/bge-base-en-v1.5` (768-d) | Strong CPU-speed retrieval (<100ms/batch), no GPU required |
+| Sparse retrieval | `SPLADE` | Recovers exact code/section matches (e.g. "HIPAA §164.312") dense search blurs |
+| Fusion | Reciprocal Rank Fusion (k=60) | Merges dense + sparse ranks without tuned interpolation weights |
+| Reranker | `bge-reranker-v2-m3` (cross-encoder) | Joint query–passage scoring on the top-50 cutoff that matters |
+| LLM | Llama 3.1 8B via **Groq** (hosted) or **Ollama** (local) | Swappable backend; Groq's free tier replaces Ollama where there's no GPU |
+| Auth | `streamlit-authenticator` (bcrypt) | Identity bound to a verified session, not a UI selection — audit logs are trustworthy |
+| Audit | SQLite, append-only, `uuid4` keys | Zero-config, transactional, collision-safe; no delete API at the app layer |
+| Evaluation | RAGAS + IR metrics | Faithfulness/relevancy + Hit-Rate/MRR/nDCG, gated in CI |
+| UI | Streamlit + Plotly | Single-process app; deployable free on Streamlit Cloud |
+
+Orchestration is **framework-free** — the pipeline is four typed Python steps
+(retrieve → rerank → build-prompt → generate). LangChain / LlamaIndex were
+intentionally left out to keep the data flow auditable and dependency-light.
 
 ---
 
 ## Evaluation
 
-The system is evaluated against a hand-labeled set of 60 query→chunk pairs derived from the same synthetic documents loaded into the index. Two evaluation passes are run: one for retrieval quality and one for generation quality.
+Latest run (`reports/eval_2026-06-01`), n = 60 ground-truth queries:
 
-### Retrieval
-
-Measures whether the relevant policy chunk appears in the top results. Hit Rate answers "did the right chunk appear at all?"; MRR answers "how high up was it?"; nDCG weighs both presence and rank.
+**Retrieval**
 
 | Metric | @5 | @10 |
 |---|---|---|
@@ -110,130 +90,115 @@ Measures whether the relevant policy chunk appears in the top results. Hit Rate 
 | MRR | 0.61 | 0.64 |
 | nDCG | 0.66 | 0.70 |
 
-*73% of questions have a relevant chunk in the top 5 results; 82% in the top 10.*
+**Generation** (RAGAS, judge `groq/llama-3.1-8b-instant`)
 
-### Generation
-
-Measures answer quality using [RAGAS](https://docs.ragas.io), with a second LLM acting as an automatic judge.
-
-| Metric | Score | What it means |
-|---|---|---|
-| Faithfulness | 0.81 | 81% of claims in the answer are directly supported by the retrieved passages |
-| Answer Relevancy | 0.76 | Answers are on-topic relative to the question |
-| Context Precision | 0.69 | Retrieved passages are mostly relevant (low noise) |
-| Context Recall | 0.74 | Most information needed to answer the question was retrieved |
-
-*Judge model: `groq/llama-3.1-8b-instant`. Full report: [`reports/eval_2026-06-01.md`](reports/eval_2026-06-01.md)*
-
-Evaluation is re-run weekly by a GitHub Actions workflow (`eval.yml`) and results are checked against minimum thresholds (`hit_rate@5 ≥ 0.70`, `faithfulness ≥ 0.78`, `context_precision ≥ 0.66`).
-
----
-
-## Project quality
-
-| Measure | Detail |
+| Metric | Score |
 |---|---|
-| Test suite | 65 tests across 6 test files |
-| Coverage | 99% (`pytest-cov`); CI fails below 90% |
-| CI | GitHub Actions on every push: `uv sync` → `ruff check` → `pytest --cov-fail-under=90` |
-| Eval gate | Weekly GitHub Actions run; exits non-zero if retrieval or generation metrics fall below baseline |
-| Linting | `ruff` — zero warnings |
+| Faithfulness | 0.81 |
+| Answer Relevancy | 0.76 |
+| Context Precision | 0.69 |
+| Context Recall | 0.74 |
+
+Evals run in CI (`.github/workflows/eval.yml`) and a quality gate
+(`scripts/check_eval_gate.py`) fails the build if scores regress.
 
 ---
 
-## Dataset
+## Skill-gap analysis
 
-Synthetic compliance documents were generated to match the structure and terminology of real regulatory text. No actual PHI or proprietary policy documents are used.
+Beyond Q&A, the system scores a synthetic workforce of **100 employees** against
+compliance categories and aggregates the results for leadership:
 
-| Domain | File |
-|---|---|
-| HIPAA privacy and security rules | `data/processed/synthetic_hipaa.json` |
-| OSHA bloodborne pathogen standards | `data/processed/synthetic_osha.json` |
-| Infection control protocols | `data/processed/synthetic_infection_control.json` |
-| Medical waste disposal | `data/processed/synthetic_medical_waste.json` |
-| Documentation and training requirements | `data/processed/synthetic_documentation_training.json` |
-| Edge-case scenarios | `data/processed/synthetic_edge_cases.json` |
-| Labeled evaluation pairs | `data/eval/eval_set.json` (60 Q→chunk pairs) |
+- 67 of 100 employees flagged as needing training; 26 urgent.
+- Largest organizational gaps: HIPAA (39%), Medical Waste (34%), Infection
+  Control (29%), Complex / Multi-Regulation (26%).
+- Performance broken down by role and experience level for targeted training.
 
-Documents are chunked into 500-token segments with 50-token overlap using a `TokenChunker`, then indexed into Qdrant with both dense and sparse vectors.
+Outputs feed the Plotly dashboard in `src/compliance_dashboard.py`.
 
 ---
 
-## Getting started (local)
+## Project structure
 
-**Prerequisites:** Docker, [`uv`](https://docs.astral.sh/uv/getting-started/installation/)
+```
+src/medcomply/        # rebuilt core package (typed, tested)
+  settings.py           # single source of truth for tunables
+  vector_store.py       # Qdrant hybrid retrieval + RBAC
+  rag_system.py         # end-to-end pipeline
+  llm_client.py         # Ollama / Groq abstraction
+  audit_logger.py       # append-only SQLite audit trail
+  auth.py               # bcrypt auth + role mapping
+  chunker.py            # token / semantic chunking
+  eval_retrieval.py     # IR metrics
+  eval_generation.py    # RAGAS metrics
+  skill_gap_analyzer.py # competency scoring
+src/                  # first-generation modules (dashboard, learning paths)
+scripts/              # ingest, eval, data prep utilities
+tests/                # pytest suite (run in CI)
+docs/                 # architecture + phase write-ups
+reports/              # dated evaluation reports
+data/                 # processed corpus, governance, audit, eval sets
+app.py                # Streamlit application
+docker-compose.yml    # local Qdrant + app
+```
+
+---
+
+## Getting started
+
+### Local (Ollama)
 
 ```bash
-git clone https://github.com/dhruvi002/medical-compliance-rag
-cd medical-compliance-rag
+# 1. Models
+brew install ollama
+ollama pull llama3.1:8b
+ollama pull nomic-embed-text
+
+# 2. Environment (uv)
 uv sync
 
-# Start Qdrant (vector database) and Ollama (local LLM)
-docker compose up -d
-docker exec medcomply-ollama ollama pull llama3.1:8b
-
-# Generate auth config (creates bcrypt-hashed credentials)
-python scripts/create_auth_config.py
-
-# Index the compliance documents
+# 3. Ingest + run
 python scripts/ingest.py
-
-# Run the app
-uv run streamlit run app.py
+streamlit run app.py
 ```
 
-See [DEPLOYMENT.md](DEPLOYMENT.md) for hosted deployment (Qdrant Cloud + Groq + Streamlit Cloud).
+### Hosted (Groq, no GPU)
 
----
+Set `llm_backend = "groq"` in settings (or the corresponding env var) and provide
+a `GROQ_API_KEY`. This is the configuration targeted for the in-progress Streamlit
+Cloud deployment (no GPU required).
 
-## Development
+### Tests & evaluation
 
 ```bash
-uv run ruff check                                    # lint
-uv run pytest                                        # tests
-uv run pytest --cov=medcomply --cov-fail-under=90   # tests with coverage gate
-uv run python scripts/run_eval.py                    # run full eval (requires GROQ_API_KEY)
+pytest                      # unit + integration tests
+python scripts/run_eval.py  # regenerate the evaluation report
 ```
 
 ---
 
-## Repository layout
+## Security notes
 
-```
-src/medcomply/        installable package
-  settings.py         all tunables (pydantic BaseModel)
-  vector_store.py     hybrid retrieval + RBAC (Qdrant)
-  llm_client.py       LLM abstraction — OllamaClient / GroqClient
-  rag_system.py       end-to-end pipeline (retrieve → rerank → prompt → generate)
-  audit_logger.py     SQLite query log
-  auth.py             bcrypt auth + role resolution
-  chunker.py          TokenChunker / SemanticChunker
-  eval_retrieval.py   Hit Rate / MRR / nDCG metrics
-  eval_generation.py  RAGAS faithfulness / relevancy / precision / recall
-  skill_gap_analyzer.py  cosine-similarity competency scoring + KMeans cohort themes
+- Passwords are bcrypt-hashed; plaintext is never stored.
+- RBAC is enforced **server-side** in Qdrant via payload filters, not in the UI.
+- The audit log exposes no delete method — records are append-only at the app layer.
+- Known limits: single-process app (no separate API boundary), no log
+  tamper-evidence, no rate limiting. See `docs/ARCHITECTURE.md#threat-model`.
 
-app.py                Streamlit frontend (RAG Assistant / Analytics / About)
-scripts/
-  ingest.py           chunk and index compliance documents into Qdrant
-  run_eval.py         run retrieval + generation eval, write reports/
-  check_eval_gate.py  assert eval metrics above threshold (used in CI)
-  create_auth_config.py  generate config/auth.yaml with hashed passwords
-data/
-  processed/          synthetic compliance documents (JSON)
-  eval/               labeled evaluation set
-reports/              eval output (JSON + Markdown)
-tests/                65 tests
-.github/workflows/
-  ci.yml              push/PR gate: lint + test
-  eval.yml            weekly eval + metric threshold check
-```
+---
+
+## Data sources
+
+All publicly available: OSHA (osha.gov/publications), HHS/HIPAA
+(hhs.gov/hipaa/for-professionals), CDC (cdc.gov/infection-control), Wikipedia
+(CC BY-SA), and synthetic Q&A generated for testing.
 
 ---
 
 ## Author
 
-Dhruvi Shah — AI/ML Engineer, University of Massachusetts Amherst
+**Dhruvi Shah** — M.S. Computer Science, University of Massachusetts Amherst.
 
 ## License
 
-Code available for review. Regulatory text is public domain.
+Educational / portfolio use. Government documents are public domain.
